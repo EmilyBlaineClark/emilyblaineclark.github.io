@@ -1,0 +1,22 @@
+// Homepage
+.page-homepage{
+  background: url('/images/home-header.jpg') no-repeat;
+  background-size: cover;
+  background-position: 20% 0%;
+  height: 100%;
+}
+
+.homepage-title{
+  position: absolute;
+  bottom: 16%;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+.ed-title{
+  color: $white;
+  font-family: "OpenSans";
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.1em;
+}

@@ -1,6 +1,16 @@
-<nav class="site_nav nav-wrap">
-  <a class="page-link" href="{{ '/work' | prepend: site.baseurl }}">Work</a>
-  <a class="page-link" href="{{ '/experience' | prepend: site.baseurl }}">Experience</a>
-  <a class="page-link" href="{{ '/about' | prepend: site.baseurl }}">About</a>
-  <a class="page-link" href="{{ '/contact' | prepend: site.baseurl }}">Contact</a>
+<nav class="demo site_nav nav-wrap">
+  <a href="/" class="brand">
+    <img class="logo-white" src="images/logo-white.svg" />
+    <img class="logo-black" src="images/logo.svg" style="display: none;" />
+  </a>
+
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button">menu</label>
+
+  <div class="menu">
+    <a class="page-link" href="{{ '/work' | prepend: site.baseurl }}">Work</a>
+    <a class="page-link" href="{{ '/experience' | prepend: site.baseurl }}">Experience</a>
+    <a class="page-link" href="{{ '/about' | prepend: site.baseurl }}">About</a>
+    <a class="page-link" href="{{ '/contact' | prepend: site.baseurl }}">Contact</a>
+  </div>
 </nav>
