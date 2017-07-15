@@ -14,72 +14,69 @@ layout: default
   <hr>
 
   <div class="keywords">
+
     <div class="skills-list">
-      <h3>Skills</h3>
-      <ul>
-        <li>Art Direction</li>
-        <li>Art Direction</li>
-        <li>Art Direction</li>
-        <li>Art Direction</li>
-        <li>Art Direction</li>
-        <li>Art Direction</li>
-        <li>Art Direction</li>
+      <h3 class="skills-title">Skills</h3>
+      <ul class="skill-list">
+        {% for skill in site.data.skills %}
+          <li>{{skill}}</li>
+        {% endfor %}
       </ul>
     </div>
+
     <div class="tools-list">
-      <h3>Tools</h3>
-      <ul>
-        <li>Sketch App</li>
-        <li>Sketch App</li>
-        <li>Sketch App</li>
-        <li>Sketch App</li>
-        <li>Sketch App</li>
+      <h3 class="tools-title">Tools</h3>
+      <ul class="tool-list">
+        {% for tool in site.data.tools %}
+          <li>{{tool}}</li>
+        {% endfor %}
       </ul>
     </div>
+
   </div>
+
   <div class="timeline-counter">
-    <div class="design-experience">
-      <h3 class="iterate-up">12yrs</h3>
-      <p>Print &amp; Layout <br>Design Experience</p>
-    </div>
-    <div class="design-experience">
-      <h3 class="iterate-up">3yrs</h3>
-      <p>Digital &amp; UI/UX <br>Design Experience</p>
-    </div>
-    <div class="design-experience">
-      <h3 class="iterate-up">3yrs</h3>
-      <p>Agency Experience</p>
-    </div>
-    <div class="design-experience">
-      <h3 class="iterate-up">10+</h3>
-      <p>Awards &amp; Honors</p>
-    </div>
+    {% for time in site.data.timeline %}
+      <div class="timeline-item">
+        <h3 class="timeline-time"><span class="iterate-up" data-amount="{{time.amount}}">{{time.amount}}</span><span class="unit">{{time.unit}}</span></h3>
+        <p>{{time.title}}</p>
+      </div>
+    {% endfor %}
   </div>
+
 </div>
 
 <div class="page-content roles-and-responsibilities">
   <h2>Roles &amp; Responsibilities</h2>
 
-  <div class="role">
-    <h3 class="timeline">August 2014 - Present</h3>
-    <h3 class="position">Art Director | DBS Interactive</h3>
-    <p class="description">I play a senior role in every design asset the agency produces. As Art Director, I work with developers, marketers, copy writers, account executives, and clients themselves to ensure every design meets the high standards we set.</p>
-    <ul class="responsibilities-list">
-      <li>Designed wireframes and mockups for more than 55 digital products including websites, apps, and infographics.</li>
-    </ul>
-  </div>
+  {% for role in site.data.roles %}
+    <div class="role">
+      <h3 class="timeline">{{role.timeline}}</h3>
+      <h3 class="position">{{role.position}}</h3>
+      <p class="description">{{role.description}}</p>
+      <ul class="responsibilities-list">
+        {% for list in role.list %}
+          <li>{{ list.item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+
 
 </div>
 
 <div class="page-content awards-list">
-  <h2>Awards</h2>
+  <h1>Awards</h1>
 
-  <div class="award">
-    <h4>2016 Summit Emerging media innovator award | Event Marketing</h4>
-    <ul>
-      <li>"Make your dollar soar" interactive infographic</li>
-      <li>DBS Interactive</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-    </ul>
-  </div>
+  {% for award in site.data.awards %}
+    <div class="award">
+      <h2 class="award-title">{{award.title}}</h2>
+      <h3 class="award-subtitle">{{award.award}} | {{award.category}}</h3>
+      <ul class="award-list-items">
+        {% for list in award.list %}
+          <li>{{ list.item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
 </div>
