@@ -20,6 +20,7 @@ nav .pseudo.button.burger{
   border: none;
   &:hover{
     background: none;
+    box-shadow: none;
   }
 }
 
@@ -151,13 +152,13 @@ nav .brand{
 
   nav .pseudo.button.burger:after{
     content: "";
-    background: $black;
+    background: $gray-light;
   }
 
   nav .pseudo.button.burger:before{
     @media (min-width: 768px){
       content: "";
-      background: $black;
+      background: $gray-light;
     }
   }
 }
