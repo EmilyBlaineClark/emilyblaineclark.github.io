@@ -8,6 +8,7 @@ nav{
   position: static;
   background: none;
 }
+
 nav .pseudo.button.burger{
   color: $orange;
   text-transform: uppercase;
@@ -24,6 +25,25 @@ nav .pseudo.button.burger:after{
   width: 1px;
   height: 20px;
   left: -5px;
+
+  @media (min-width: 768px){
+    width: 80%;
+    height: 1px;
+    left: 9%;
+    top: -10%;
+  }
+}
+
+nav .pseudo.button.burger:before{
+  @media (min-width: 768px){
+    content: "";
+    position: absolute;
+    background: $gray;
+    width: 80%;
+    height: 1px;
+    left: 9px;
+    bottom: 0px;
+  }
 }
 
 nav .burger ~ .menu{
@@ -31,6 +51,12 @@ nav .burger ~ .menu{
   border-left: $purple-dark 2px solid;
   right: -2px;
   padding-top: 4em;
+
+  @media (min-width: 768px){
+    background: none;
+    border: none;
+    margin-right: 1em;
+  }
 }
 
 nav .burger ~ .menu a{
@@ -38,10 +64,43 @@ nav .burger ~ .menu a{
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
+
+  @media (min-width: 768px){
+    color: $white;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0.5em;
+    position: relative;
+
+    &:after{
+      content: "";
+      position: absolute;
+      width: 1px;
+      background: $white;
+      height: 26px;
+      right: 0;
+      top: 2px;
+      opacity: 0.5;
+    }
+
+    &:last-of-type{
+      &:after{
+        content: "";
+        background: none;
+      }
+    }
+  }
 }
 
 nav .brand{
   max-width: 70%;
+
+  @media( min-width: 1024px ){
+    margin-top: 2em;
+    margin-left: 1em;
+
+  }
 }
 
 .logo{
