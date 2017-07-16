@@ -10,8 +10,8 @@ bg-srcset:
   <div class="experience-bgs">
     <img class="experience-bg scale" data-scale="best-fill" data-align="center" src="/images/bg-images/experience-768.jpg" srcset="/images/bg-images/experience-768.jpg 700w, /images/bg-images/experience-1024.jpg 1024w, /images/bg-images/experience-2000.jpg 2000w">
   </div>
-  <div class="flex two-700 center">
-    <div class="three-fifth">
+  <div class="flex two-700">
+    <div class="three-fifth-700">
       <div class="page-title">
         <h1 class="title">Experience</h1>
       </div>
@@ -44,7 +44,7 @@ bg-srcset:
       </div>
 
     </div>
-    <div class="two-fifth">
+    <div class="two-fifth-700">
       <div class="timeline-counter">
         {% for time in site.data.timeline %}
         <div class="timeline-item">
@@ -57,37 +57,44 @@ bg-srcset:
   </div>
 </div>
 
-<div class="roles-and-responsibilities">
-  <h2>Roles &amp; Responsibilities</h2>
+<div class="lower-half">
+  <div class="flex full">
+    <div class="roles-and-responsibilities">
+      <h2>Roles &amp; Responsibilities</h2>
 
-  {% for role in site.data.roles %}
-    <div class="role">
-      <h3 class="timeline">{{role.timeline}}</h3>
-      <h3 class="position">{{role.position}}</h3>
-      <p class="description">{{role.description}}</p>
-      <ul class="responsibilities-list">
-        {% for list in role.list %}
+      {% for role in site.data.roles %}
+      <div class="role">
+        <h3 class="timeline">{{role.timeline}}</h3>
+        <h3 class="position">{{role.position}}</h3>
+        <p class="description">{{role.description}}</p>
+        <ul class="responsibilities-list">
+          {% for list in role.list %}
           <li>{{ list.item }}</li>
-        {% endfor %}
-      </ul>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+
+
     </div>
-  {% endfor %}
 
+    <hr>
 
-</div>
-
-<div class="page-content awards-list">
-  <h1>Awards</h1>
-
-  {% for award in site.data.awards %}
-    <div class="award">
-      <h2 class="award-title">{{award.title}}</h2>
-      <h3 class="award-subtitle">{{award.award}} | {{award.category}}</h3>
-      <ul class="award-list-items">
-        {% for list in award.list %}
-          <li>{{ list.item }}</li>
+    <div class="page-content">
+      <h1>Awards</h1>
+      <div class="flex two-700 awards-list">
+        {% for award in site.data.awards %}
+        <div class="award">
+          <h2 class="award-title">{{award.title}}</h2>
+          <h3 class="award-subtitle">{{award.award}} | {{award.category}}</h3>
+          <ul class="award-list-items">
+            {% for list in award.list %}
+            <li>{{ list.item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
         {% endfor %}
-      </ul>
+      </div>
     </div>
-  {% endfor %}
+  </div>
 </div>

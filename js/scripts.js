@@ -11,5 +11,7 @@ this.BEST_FIT_DOWN_ONLY&&1<this.options.logLevel&&console.warn("imageScale - DEB
 this;this._didScheduleScale=!0;requestAnimationFrame(function(){setTimeout(function(){a.scale()},0)})}else this.scale()}}});
 
 $(function() {
-  $("img.scale").imageScale();
+  $("img.scale").imageScale({
+  rescaleOnResize: true
+  });
 });

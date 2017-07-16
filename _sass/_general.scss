@@ -46,7 +46,7 @@
 }
 
 .flex{
-  max-width: 1024px;
+  max-width: 1180px;
   margin: 0 auto;
   position: relative;
   z-index: 10;
@@ -56,5 +56,14 @@
   overflow-y: hidden;
   position: relative;
   padding-top: 7em;
+  padding-bottom: 5em;
   color: $white;
+}
+
+.lower-half{
+  padding-top: 5em;
+  padding-bottom: 5em;
+  .flex{
+    max-width: 1024px;
+  }
 }
