@@ -1,3 +1,17 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 .btn{
   background: none;
   border: $orange 2px solid;
@@ -29,4 +43,18 @@
     }
   }
 
+}
+
+.flex{
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.upper-half{
+  overflow-y: hidden;
+  position: relative;
+  padding-top: 7em;
+  color: $white;
 }

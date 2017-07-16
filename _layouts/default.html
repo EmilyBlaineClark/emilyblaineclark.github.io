@@ -15,20 +15,12 @@
         {% include nav.html %}
       </header>
 
-      <div class="page__{{ page.url | slugify }}">
-        <div class="bg-images">
-          {% if page.fg-srcset %} <img class="fg-image" src="{{ page.fg-srcset.small }}" srcset="{{ page.fg-srcset.small }} 700w, {{ page.fg-srcset.medium }} 1024w, {{ page.fg-srcset.large }} 2000w">{% endif %}
-          {% if page.bg-srcset %} <img class="bg-image" src="{{ page.bg-srcset.small }}" srcset="{{ page.bg-srcset.small }} 700w, {{ page.bg-srcset.medium }} 1024w, {{ page.bg-srcset.large }} 2000w">{% endif %}
-        </div>
-        <div class="page__content">
-          {{ content }}
-        </div>
-      </div>
+      <main class="content clearfix">
+        {{ content }}
+      </main>
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
   </body>
 

@@ -1,52 +1,61 @@
 ---
 layout: default
+title: experience
+bg-srcset:
+  small: /images/bg-images/experience-768.jpg
+  medium: /images/bg-images/experience-1024.jpg
+  large: /images/bg-images/experience-2000.jpg
 ---
-
-<div class="page-title">
-  <h1 class="title">Experience</h1>
-</div>
-
-<div class="page-content">
-  <p>My career as a designer has spanned more than a decade, and if there's one thing I've learned, it's how to get the job done and get it done right. That's why I've built my career on a foundation of creative collaboration, efficient processes, and clear communication.</p>
-  <a href="#" class="btn">View Work</a>
-  <a href="#">Download Resume</a>
-
-  <hr>
-
-  <div class="keywords">
-
-    <div class="skills-list">
-      <h3 class="skills-title">Skills</h3>
-      <ul class="skill-list">
-        {% for skill in site.data.skills %}
-          <li>{{skill}}</li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="tools-list">
-      <h3 class="tools-title">Tools</h3>
-      <ul class="tool-list">
-        {% for tool in site.data.tools %}
-          <li>{{tool}}</li>
-        {% endfor %}
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="timeline-counter">
-    {% for time in site.data.timeline %}
-      <div class="timeline-item">
-        <h3 class="timeline-time"><span class="iterate-up" data-amount="{{time.amount}}">{{time.amount}}</span><span class="unit">{{time.unit}}</span></h3>
-        <p>{{time.title}}</p>
+<div class="upper-half">
+  <div class="experience-bgs"><img class="experience-bg" src="/images/bg-images/experience-768.jpg" srcset="/images/bg-images/experience-768.jpg 700w, /images/bg-images/experience-1024.jpg 1024w, /images/bg-images/experience-2000.jpg 2000w"></div>
+  <div class="flex two-700 center">
+    <div class="three-fifth">
+      <div class="page-title">
+        <h1 class="title">Experience</h1>
       </div>
-    {% endfor %}
-  </div>
 
+      <p>My career as a designer has spanned more than a decade, and if there's one thing I've learned, it's how to get the job done and get it done right. That's why I've built my career on a foundation of creative collaboration, efficient processes, and clear communication.</p>
+      <a href="#" class="btn">View Work</a>
+      <a href="#">Download Resume</a>
+
+      <hr>
+
+      <div class="flex two keywords">
+
+        <div class="skills-list">
+          <h3 class="skills-title">Skills</h3>
+          <ul class="skill-list">
+            {% for skill in site.data.skills %}
+            <li>{{skill}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="tools-list">
+          <h3 class="tools-title">Tools</h3>
+          <ul class="tool-list">
+            {% for tool in site.data.tools %}
+            <li>{{tool}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="two-fifth">
+      <div class="timeline-counter">
+        {% for time in site.data.timeline %}
+        <div class="timeline-item">
+          <h3 class="timeline-time"><span class="iterate-up" data-amount="{{time.amount}}">{{time.amount}}</span><span class="unit">{{time.unit}}</span></h3>
+          <p>{{time.title}}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="page-content roles-and-responsibilities">
+<div class="roles-and-responsibilities">
   <h2>Roles &amp; Responsibilities</h2>
 
   {% for role in site.data.roles %}

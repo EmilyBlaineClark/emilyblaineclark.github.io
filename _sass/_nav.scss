@@ -123,7 +123,10 @@ nav .brand{
   fill: $black;
 }
 
-.page__homepage{
+
+// Dark Pages
+.page__homepage,
+.page__experience-html{
   .logo-svg{
     fill: $white;
   }
