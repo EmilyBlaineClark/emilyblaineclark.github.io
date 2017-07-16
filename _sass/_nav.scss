@@ -39,3 +39,15 @@ nav .burger ~ .menu a{
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
+nav .brand{
+  max-width: 70%;
+}
+
+.logo{
+  width: 100%;
+}
+
+.logo-svg{
+  fill: $white;
+}

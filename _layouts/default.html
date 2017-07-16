@@ -15,8 +15,12 @@
         {% include nav.html %}
       </header>
 
-      <div class="page__content page__{{ page.url | slugify }}">
-        <div class="page__inner">
+      <div class="page__{{ page.url | slugify }}">
+        <div class="bg-images">
+          {% if page.fg-srcset %} <img class="fg-image" src="{{ page.fg-srcset.small }}" srcset="{{ page.fg-srcset.small }} 700w, {{ page.fg-srcset.medium }} 1024w, {{ page.fg-srcset.large }} 2000w">{% endif %}
+          {% if page.bg-srcset %} <img class="bg-image" src="{{ page.bg-srcset.small }}" srcset="{{ page.bg-srcset.small }} 700w, {{ page.bg-srcset.medium }} 1024w, {{ page.bg-srcset.large }} 2000w">{% endif %}
+        </div>
+        <div class="page__content">
           {{ content }}
         </div>
       </div>

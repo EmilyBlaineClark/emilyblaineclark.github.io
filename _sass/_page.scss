@@ -1,10 +1,26 @@
 // Homepage
 .page-homepage{
-  background: url('/images/home-header.jpg') no-repeat;
-  background-size: cover;
-  background-position: 20% 0%;
   height: 100%;
 }
+
+.bg-image, .fg-image{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -50%;
+  height: 100%;
+  z-index: 1;
+}
+
+.fg-image{
+  z-index: 2;
+  opacity: 0.56;
+}
+
+.page__content{
+  z-index: 3;
+  position: relative;
+  height: 100vh;}
 
 .homepage-title{
   position: absolute;
