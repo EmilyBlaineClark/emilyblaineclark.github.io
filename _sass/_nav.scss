@@ -1,6 +1,7 @@
 .site_header{
   z-index: 11;
   position: relative;
+  margin-bottom: 2em;
 }
 
 nav{
@@ -16,6 +17,10 @@ nav .pseudo.button.burger{
   font-size: 0.9rem;
   letter-spacing: 2px;
   margin-top: 2px;
+  border: none;
+  &:hover{
+    background: none;
+  }
 }
 
 nav .pseudo.button.burger:after{
@@ -47,12 +52,12 @@ nav .pseudo.button.burger:before{
 }
 
 nav .burger ~ .menu{
-  background: $rich-black;
+  background: $black;
   border-left: $purple-dark 2px solid;
   right: -2px;
   padding-top: 4em;
 
-  @media (min-width: 768px){
+  @media (min-width: 960px){
     background: none;
     border: none;
     margin-right: 1em;
@@ -65,22 +70,24 @@ nav .burger ~ .menu a{
   text-transform: uppercase;
   letter-spacing: 3px;
 
-  @media (min-width: 768px){
-    color: $white;
+  @media (min-width: 960px){
+    color: $black;
     font-weight: normal;
-    font-size: 0.8em;
+    font-size: 0.6em;
     margin: 0;
     padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     position: relative;
 
     &:after{
       content: "";
       position: absolute;
       width: 1px;
-      background: $white;
-      height: 26px;
+      background: $black;
+      height: 1.9em;
       right: 0;
-      top: 2px;
+      top: 0.1em;
       opacity: 0.5;
     }
 
@@ -90,13 +97,17 @@ nav .burger ~ .menu a{
         background: none;
       }
     }
+
+    &:hover{
+      color: $orange;
+    }
   }
 }
 
 nav .brand{
   max-width: 70%;
 
-  @media( min-width: 1024px ){
+  @media( min-width: 960px ){
     margin-top: 2em;
     margin-left: 1em;
 
@@ -108,5 +119,45 @@ nav .brand{
 }
 
 .logo-svg{
-  fill: $white;
+  fill: $black;
+}
+
+.page__homepage{
+  .logo-svg{
+    fill: $white;
+  }
+
+  nav .burger ~ .menu a{
+    @media( min-width: 960px ){
+      color: $gray-light;
+
+      &:after{
+        content: "";
+        background: $gray-light;
+      }
+
+      &:last-of-type{
+        &:after{
+          content: "";
+          background: none;
+        }
+      }
+
+      &:hover{
+        color: $orange;
+      }
+    }
+  }
+
+  nav .pseudo.button.burger:after{
+    content: "";
+    background: $black;
+  }
+
+  nav .pseudo.button.burger:before{
+    @media (min-width: 768px){
+      content: "";
+      background: $black;
+    }
+  }
 }

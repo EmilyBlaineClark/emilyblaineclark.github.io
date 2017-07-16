@@ -1,6 +1,7 @@
 // Homepage
 .page-homepage{
   height: 100%;
+  overflow: hidden;
 }
 .bg-images{
   position: fixed;
@@ -9,7 +10,6 @@
   width: 200%;
   height: 200%;
 }
-
 .bg-image, .fg-image{
   position: absolute;
   top: 0;
@@ -21,16 +21,22 @@
   min-height: 50%;
   overflow-x: hidden;
 }
-
 .fg-image{
   z-index: 2;
   opacity: 0.56;
 }
 
+.homepage-button{
+  float: right;
+}
+
+
 .page__content{
   z-index: 3;
   position: relative;
-  height: 100vh;}
+  height: 100vh;
+  max-height: 900px;
+}
 
 .homepage-title{
   position: absolute;
@@ -64,4 +70,10 @@
   @media( min-width: 1024px ){
     font-size: 3em;
   }
+}
+
+
+
+.site__wrapper{
+  background: $gray-light;
 }

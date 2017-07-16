@@ -9,7 +9,7 @@
         <span></span>
     </div>
 
-    <div class="site__wrapper page-{{ page.title }}">
+    <div class="site__wrapper {%if page.url != '/'%} page__{{ page.url | slugify }}{%else%} page__homepage{%endif%}">
 
       <header class="site_header">
         {% include nav.html %}
