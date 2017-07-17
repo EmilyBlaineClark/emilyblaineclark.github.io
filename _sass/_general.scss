@@ -12,6 +12,29 @@
 .clearfix { display: block; }
 /* close commented backslash hack */
 
+a{
+  color: $orange;
+  text-transform: uppercase;
+}
+
+.page-title{
+  font-family: "OpenSans";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+
+  &:after{
+    content: "";
+    width: 0.5em;
+    height: 2px;
+    background: $white;
+    display: block;
+    position: relative;
+    bottom: 0.7em;
+  }
+}
+
 .btn{
   background: none;
   border: $orange 2px solid;
@@ -57,7 +80,42 @@
   position: relative;
   padding-top: 7em;
   padding-bottom: 5em;
-  color: $white;
+  color: $gray-light;
+  font-family: "OpenSans";
+
+  p{
+    font-weight: normal;
+    font-size: 0.8em;
+    line-height: 1.85em;
+    letter-spacing: 1px;
+    margin-bottom: 3em;
+  }
+
+  a{
+    display: inline-block;
+    margin-bottom: 2em;
+    margin-right: 1em;
+  }
+
+  hr{
+    outline: none;
+    border: 1px solid $gray-light;
+    opacity: 0.76;
+    margin-bottom: 1em;
+  }
+}
+
+.skills-title,
+.tools-title{
+  text-transform: uppercase;
+}
+
+.skill-list,
+.tool-list{
+  padding-left: 1em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
 }
 
 .lower-half{
