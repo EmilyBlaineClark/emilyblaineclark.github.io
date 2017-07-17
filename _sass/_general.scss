@@ -25,7 +25,7 @@ nav a{
 }
 
 .page-title{
-  font-family: "OpenSans";
+  font-family: $opensans;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -88,7 +88,7 @@ nav a{
   padding-top: 7em;
   padding-bottom: 5em;
   color: $gray-light;
-  font-family: "OpenSans";
+  font-family: $opensans;
 
   p{
     font-weight: normal;
@@ -139,7 +139,7 @@ nav a{
 }
 
 .timeline-time{
-  font-family: "Lato";
+  font-family: $lato;
   font-size: 4.5em;
   color: $orange;
   line-height: 1em;
@@ -179,7 +179,7 @@ nav a{
   h2{
     color: $purple-bright;
     text-transform: uppercase;
-    font-family: "OpenSans";
+    font-family: $opensans;
     font-weight: bold;
     padding-left: 0.25em;
   }
