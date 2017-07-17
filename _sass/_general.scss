@@ -15,6 +15,13 @@
 a{
   color: $orange;
   text-transform: uppercase;
+  text-decoration: underline;
+}
+
+a.btn,
+a.button,
+nav a{
+  text-decoration: none;
 }
 
 .page-title{
@@ -103,6 +110,19 @@ a{
     opacity: 0.76;
     margin-bottom: 1em;
   }
+
+  &:after{
+    content: "";
+    display: block;
+    width: 33px;
+    height: 17px;
+    position: relative;
+    bottom: -40px;
+    left: 50%;
+    background: url('/images/svgs/scroll-down-arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .skills-title,
@@ -118,10 +138,75 @@ a{
   letter-spacing: 1px;
 }
 
+.timeline-time{
+  font-family: "Lato";
+  font-size: 4.5em;
+  color: $orange;
+  line-height: 1em;
+  padding: 0;
+}
+
+.timeline-item{
+  p{
+    text-transform: uppercase;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    padding-left: 1em;
+    opacity: 0.9;
+  }
+}
+
 .lower-half{
   padding-top: 5em;
   padding-bottom: 5em;
   .flex{
-    max-width: 1024px;
+    max-width: 800px;
+  }
+  hr{
+    outline: none;
+    border: none;
+    border-top: 1px solid $gray;
+    height: 0;
+    display: block;
+    padding: 0;
+    margin-bottom: 2em;
+    max-width: 760px;
+  }
+}
+
+.roles-and-responsibilities,
+.awards{
+  h2{
+    color: $purple-bright;
+    text-transform: uppercase;
+    font-family: "OpenSans";
+    font-weight: bold;
+    padding-left: 0.25em;
+  }
+
+  p, li{
+    color: $charcoal;
+    font-size: 0.9em;
+  }
+
+  h3,
+  .timeline,
+  .position{
+    text-transform: uppercase;
+    font-size: 1em;
+    color: $orange;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    padding: 0;
+  }
+
+  .responsibilities-list{
+    margin-left: 2em;
+  }
+
+  .role{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding-left: 0.25em;
   }
 }

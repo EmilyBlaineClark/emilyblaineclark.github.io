@@ -80,12 +80,12 @@ bg-srcset:
 
     <hr>
 
-    <div class="page-content">
-      <h1>Awards</h1>
+    <div class="awards">
+      <h2>Awards</h2>
       <div class="flex two-700 awards-list">
         {% for award in site.data.awards %}
         <div class="award">
-          <h2 class="award-title">{{award.title}}</h2>
+          <h3 class="award-title">{{award.title}}</h2>
           <h3 class="award-subtitle">{{award.award}} | {{award.category}}</h3>
           <ul class="award-list-items">
             {% for list in award.list %}
