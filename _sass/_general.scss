@@ -85,10 +85,18 @@ nav a{
 .upper-half{
   overflow-y: hidden;
   position: relative;
-  padding-top: 7em;
+  padding-top: 3em;
   padding-bottom: 5em;
   color: $gray-light;
   font-family: $opensans;
+
+  @media(min-width: 700px){
+    padding-top: 5em;
+  }
+
+  @media(min-width: 1000px){
+    padding-top: 7em;
+  }
 
   p{
     font-weight: normal;
@@ -119,6 +127,7 @@ nav a{
     position: relative;
     bottom: -40px;
     left: 50%;
+    transform: translateX(-50%);
     background: url('/images/svgs/scroll-down-arrow.svg');
     background-size: cover;
     background-repeat: no-repeat;

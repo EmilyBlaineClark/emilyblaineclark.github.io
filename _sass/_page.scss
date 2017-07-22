@@ -1,5 +1,6 @@
 // Homepage
-.page__homepage{
+.page__homepage,
+.page__contact-html{
   height: 100vh;
   overflow: hidden;
 
@@ -83,7 +84,8 @@
 }
 
 .experience-bgs,
-.about-bgs{
+.about-bgs,
+.contact-bgs{
   position: absolute;
   top: 0;
   left:0;
@@ -156,6 +158,18 @@
   padding-top: 8em;
 }
 
+.timeline-item{
+  width: 100%;
+
+  @media(min-width: 700px){
+    width: 50%;
+  }
+
+  @media(min-width: 1000px){
+    width: 100%;
+  }
+}
+
 .three-fifth-700{
   @media (min-width: 700px){
     padding-right: 5em;
@@ -167,5 +181,90 @@
     max-width: 250px;
     padding-left: 4em;
     padding-top: 4em;
+  }
+}
+
+
+// Contact Page
+.contact-content{
+  position: relative;
+  z-index: 10;
+
+  @media(min-width: 1000px){
+    text-align: left;
+  }
+}
+
+.contact-bgs{
+  filter: blur(15px);
+  top: -29px;
+  left: -29px;
+  bottom: -29px;
+  right: -29px;
+}
+
+.page__contact-html{
+  text-align: center;
+
+  .title{
+    color: $purple-bright;
+  }
+
+  .page-title{
+    &:after{
+      left: 50%;
+      width: 0.6em;
+
+      @media(min-width: 1000px){
+        left: 0;
+      }
+    }
+  }
+
+  .contact-bgs:after{
+    background: $black;
+  }
+
+  .upper-half:after{
+    display: none;
+  }
+}
+
+.contact-form{
+  text-align: left;
+  padding: 1em;
+
+  label{
+    color: $orange;
+    display: inline-block;
+    margin-bottom: 0.8em;
+  }
+
+  input, textarea{
+    background: rgba($white, 0.14);
+    border: 1px solid $white;
+    border-radius: 0;
+    margin-bottom: 1em;
+    height: auto;
+    padding: 0.5em;
+    display: inline-block;
+  }
+
+  input[type=submit]{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .btn{
+    @extend .btn;
+
+    &:after{
+      content: "";
+      width: 0.8em;
+      height: 2px;
+      background: $orange;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
   }
 }

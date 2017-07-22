@@ -54,8 +54,8 @@ nav .pseudo.button.burger:before{
 
 nav .burger ~ .menu{
   background: $black;
-  border-left: $purple-dark 2px solid;
-  right: -2px;
+  border-left: #846DCB 3px solid;
+  right: -3px;
   padding-top: 4em;
 
   @media (min-width: 960px){
@@ -144,7 +144,8 @@ nav .brand{
 // Dark Pages
 .page__homepage,
 .page__experience-html,
-.page__about-html{
+.page__about-html,
+.page__contact-html{
   .logo-svg{
     fill: $white;
   }

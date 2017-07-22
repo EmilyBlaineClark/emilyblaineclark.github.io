@@ -3,24 +3,34 @@ layout: default
 title: contact
 ---
 
-<div class="page-title">
-  <h1 class="title">Contact</h1>
-  <p>Send a message to get in touch.</p>
-  <div class="social-links">
-    <a href="#" class="linkedin">LinkedIn</a>
-    <a href="#" class="instagram">Instagram</a>
+<div class="upper-half">
+  <div class="contact-bgs">
+    <img class="contact-bg scale" data-scale="best-fill" data-align="center" src="/images/bg-images/home-768.jpg" srcset="/images/bg-images/home-768.jpg 700w, /images/bg-images/home-1024.jpg 1024w">
   </div>
+  <div class="flex one two-1000 contact-content">
+    <div class="">
+      <div class="page-title">
+        <h1 class="title">Contact</h1>
+      </div>
+      <p>Send a message to get in touch.</p>
+      <div class="social-links">
+        <a href="#" class="linkedin">LinkedIn</a>
+        <a href="#" class="instagram">Instagram</a>
+      </div>
+    </div>
+    <div class="">
+      <form class="contact-form" action="#">
+        <label for="name">Name*</label>
+        <input id="name" name="name" type="text" required>
 
-  <form action="#">
-    <label for="name">Name*</label>
-    <input id="name" name="name" type="text" required>
+        <label for="email">Email*</label>
+        <input id="email" name="email" type="email" required>
 
-    <label for="email">Email*</label>
-    <input id="email" name="email" type="email" required>
+        <label for="message">Message (500 Char. or Less)*</label>
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
 
-    <label for="message">Message (500 Char. or Less)*</label>
-    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-
-    <input type="submit" value="Send Message" placeholder="Send Message">
-  </form>
+        <input class="btn" type="submit" value="Send Message" placeholder="Send Message">
+      </form>
+    </div>
+  </div>
 </div>
