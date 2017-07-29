@@ -1,7 +1,7 @@
 .btn{
   text-transform: uppercase;
   color: $orange;
-  border: 1px solid $orange;
+  border: 2px solid $orange;
   padding: 1em 1.4em;
   margin: 0;
   font-family: $opensans;
@@ -9,11 +9,12 @@
   font-size: 0.7em;
   position: relative;
   transition: 0.2s color;
+  display: inline-block;
 
 
   &:before{
     content: "";
-    height: 1px;
+    height: 2px;
     width: 0.8em;
     background: $orange;
     position: absolute;
@@ -40,5 +41,45 @@
     &:after{
       right: 0%;
     }
+  }
+}
+
+.page-title{
+  font-family: $opensans;
+  font-size: 3em;
+  letter-spacing: 3px;
+  color: $purple-light;
+  text-transform: uppercase;
+  position: relative;
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.5em;
+    height: 3px;
+    background: $white;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.page-content{
+  z-index: 10;
+  position: relative;
+  margin-top: 4em;
+  font-family: $opensans;
+  font-weight: normal;
+  color: $white;
+  padding: 2em;
+
+  p{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    line-height: 2;
+  }
+
+  .btn{
+    font-size: 1em;
   }
 }

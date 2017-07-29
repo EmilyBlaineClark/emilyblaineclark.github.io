@@ -1,4 +1,5 @@
-.homepage-bg-images{
+.homepage-bg-images,
+.work-bg-images{
   position: fixed;
   top: 0;
   left: 0;
@@ -28,5 +29,144 @@
   @media($bp-desktop){
     bottom: auto;
     top: 40%;
+  }
+}
+
+.homepage-button{
+  float: right;
+}
+
+
+
+.work-bg-images{
+  background: $charcoal;
+}
+
+.work-devices{
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  transition:
+    0.5s left,
+    0.5s right,
+    0.5s bottom,
+    0.5s top,
+    1.5s transform;
+
+  @media($bp-tablet){
+    max-width: 600px;
+  }
+
+  @media($bp-desktop){
+    max-width: 700px;
+  }
+}
+
+.device-phone{
+  bottom: -20%;
+  left: -20%;
+  width: 100%;
+
+  @media(min-width: 500px){
+    left: -20%;
+  }
+
+  @media(min-width: 600px){
+    left: 0%;
+    min-width: 420px;
+    bottom: -15%;
+  }
+
+  @media(min-width: 700px){
+    max-width: 460px;
+    bottom: -10%;
+    left: -10%;
+  }
+
+  @media(min-width: 1100px){
+    left: 5%;
+    bottom: -20%;
+    max-width: 500px;
+  }
+
+  @media(min-width: 1300px){
+    left: 5%;
+    bottom: -20%;
+    max-width: 600px;
+  }
+
+  @media(min-width: 1400px){
+    left: 15%;
+    bottom: -40%;
+  }
+
+  &:hover{
+    transform: translate(4%,4%);
+  }
+}
+
+.device-tablet{
+  top: 0;
+  right: -19%;
+
+  @media(min-width: 500px){
+    right: -29%;
+    top: 0%;
+    max-width: 500px;
+  }
+
+  @media(min-width: 700px){
+    max-width: 600px;
+  }
+
+  @media(min-width: 850px){
+    right: 0%;
+  }
+
+  @media(min-width: 1000px){
+    right: 0%;
+    top: -10%;
+    max-width: 800px;
+  }
+
+  &:hover{
+    transform: translate(-4%,-4%);
+  }
+}
+
+.device-laptop{
+  bottom: 0%;
+  right: -40%;
+
+  @media(min-width: 500px){
+    right: -30%;
+    max-width: 500px;
+  }
+
+  @media(min-width: 700px){
+    right: -20%;
+    bottom: -4%;
+    max-width: 560px;
+  }
+
+  @media(min-width: 850px){
+    right: 0%;
+  }
+
+  @media(min-width: 1000px){
+    right: -10%;
+    bottom: -20%;
+    max-width: 800px;
+  }
+
+  &:hover{
+    transform: translate(0%,-4%);
+  }
+}
+
+.page__work-html .page-content{
+  max-width: 700px;
+  @media($bp-desktop){
+    left: 10%;
   }
 }
