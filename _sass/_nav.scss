@@ -77,14 +77,31 @@ nav .burger ~ .menu a{
     color: $white;
     padding-right: 1em;
     border-right: 1px solid $white;
+    position: relative;
 
     &:last-of-type{
       border: none;
       padding-right: 0;
     }
 
+    &:after{
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: -5px;
+      height: 1px;
+      background: $orange;
+      width: 0%;
+      transition: 0.5s width;
+    }
+
     &:hover{
       color: $orange;
+
+      &:after{
+        width: 80%;
+      }
     }
   }
 }
