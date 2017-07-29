@@ -3,62 +3,20 @@ $opensans: "Open Sans", sans-serif;
 $montserrat: "Monserrat", sans-serif;
 $lato: "Lato", sans-serif;
 
-// @font-face {
-//   font-family: "Lato";
-//   font-style: normal;
-//   font-weight: bold;
-//   src: url("/fonts/Lato-Hairline.ttf") format("truetype");
-// }
-//
-// @font-face {
-// 	font-family: "Montserrat";
-// 	font-style: normal;
-// 	font-weight: bold;
-// 	src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
-// }
-//
-// @font-face {
-// 	font-family: "Montserrat";
-// 	font-style: italic;
-// 	font-weight: bold;
-// 	src: url("/fonts/Montserrat-BoldItalic.ttf") format("truetype");
-// }
-//
-// @font-face {
-// 	font-family: "Montserrat";
-// 	font-style: italic;
-// 	font-weight: normal;
-// 	src: url("/fonts/Montserrat-Italic.ttf") format("truetype");
-// }
-//
-// @font-face {
-// 	font-family: "Montserrat";
-// 	font-style: normal;
-// 	font-weight: normal;
-// 	src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
-// }
-//
-// @font-face {
-// 	font-family: "OpenSans";
-// 	font-style: normal;
-// 	font-weight: normal;
-// 	src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
-// }
-//
-// @font-face {
-// 	font-family: "OpenSans";
-// 	font-style: normal;
-// 	font-weight: bold;
-// 	src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
-// }
-//
-// @font-face {
-// 	font-family: "OpenSans";
-// 	font-style: italic;
-// 	font-weight: bold;
-// 	src: url("/fonts/OpenSans-BoldItalic.ttf") format("truetype");
-// }
-//
-.text-orange{
-  color: $orange;
+body{
+  font-family: $opensans;
+}
+
+nav, nav label, nav a{
+  font-family: $montserrat;
+  text-transform: uppercase;
+  font-weight: 100;
+
+  @media($bp-desktop){
+    font-size: 0.9em;
+  }
+}
+
+.numbers{
+  font-family: $lato;
 }

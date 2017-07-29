@@ -1,193 +1,90 @@
-.site_header{
-  z-index: 11;
-  position: relative;
-  margin-bottom: 2em;
+.brand svg,
+.logo{
+  width: 100%;
+  fill: $white;
 }
 
+// Nav Resets
 nav{
-  box-shadow: none;
-  position: static;
   background: none;
-}
-
-nav .pseudo.button.burger{
-  color: $orange;
-  text-transform: uppercase;
-  font-family: $montserrat;
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  margin-top: 2px;
-  border: none;
-  &:hover{
-    background: none;
-    box-shadow: none;
-  }
-}
-
-nav .pseudo.button.burger:after{
-  content: "";
   position: absolute;
-  background: $gray;
-  width: 1px;
-  height: 20px;
-  left: -5px;
-
-  @media (min-width: 768px){
-    width: 80%;
-    height: 1px;
-    left: 9%;
-    top: -10%;
-  }
+  top: 0;
+  box-shadow: none;
 }
 
-nav .pseudo.button.burger:before{
-  @media (min-width: 768px){
+nav .brand{
+  max-width: 70%;
+}
+
+.burger.pseudo.button{
+  color: $orange;
+  letter-spacing: 3px;
+
+  &:before{
     content: "";
+    display: block;
     position: absolute;
-    background: $gray;
-    width: 80%;
+    width: 1px;
+    height: 1em;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: $white;
+
+    @media( $bp-tablet ){
+      transform: none;
+      height: 1px;
+      width: 80%;
+      top: 0;
+      left: 8%;
+    }
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
     height: 1px;
-    left: 9px;
-    bottom: 0px;
+    width: 80%;
+    bottom: 0;
+    left: 8%;
+    @media( $bp-tablet ){
+      background: $white;
+    }
   }
 }
 
 nav .burger ~ .menu{
   background: $black;
-  border-left: #846DCB 3px solid;
-  right: -3px;
-  padding-top: 4em;
+  padding-top: 6em;
+  border-left: 3px solid $purple-light;
+  right: -4px;
 
-  @media (min-width: 960px){
-    background: none;
+  @media( $bp-desktop ){
+    padding: 0;
+    right: auto;
     border: none;
-    margin-right: 1em;
   }
 }
 
 nav .burger ~ .menu a{
-  color: $orange;
-  font-family: $montserrat;
-  text-transform: uppercase;
   letter-spacing: 3px;
+  color: $orange;
+  margin-bottom: 1.3em;
+  transition: 0.5s color;
 
-  @media (min-width: 960px){
-    color: $black;
-    font-weight: normal;
-    font-size: 0.7em;
-    margin: 0.5em;
-    padding: 0em;
-    margin-left: 1em;
-    margin-right: 1em;
-    position: relative;
-
-    &:after{
-      content: "";
-      position: absolute;
-      width: 1px;
-      background: $black;
-      height: 1.9em;
-      right: -13px;
-      top: -6px;
-      opacity: 0.5;
-    }
-
-    &:before{
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background: $orange;
-      height: 2px;
-      width: 0px;
-      transition: width 0.3s;
-    }
+  @media( $bp-desktop ){
+    color: $white;
+    padding-right: 1em;
+    border-right: 1px solid $white;
 
     &:last-of-type{
-      &:after{
-        content: "";
-        background: none;
-      }
+      border: none;
+      padding-right: 0;
     }
 
     &:hover{
       color: $orange;
-
-      &:before{
-        content: "";
-        width: 100%;
-      }
     }
-  }
-}
-
-nav .brand{
-  max-width: 70%;
-
-  @media( min-width: 960px ){
-    margin-top: 2em;
-    margin-left: 1em;
-
-  }
-}
-
-.logo{
-  width: 100%;
-}
-
-.logo-svg{
-  fill: $black;
-}
-
-
-// Dark Pages
-.page__homepage,
-.page__experience-html,
-.page__about-html,
-.page__contact-html{
-  .logo-svg{
-    fill: $white;
-  }
-
-  nav .burger ~ .menu a{
-    @media( min-width: 960px ){
-      color: $gray-light;
-
-      &:after{
-        content: "";
-        background: $gray-light;
-      }
-
-      &:last-of-type{
-        &:after{
-          content: "";
-          background: none;
-        }
-      }
-
-      &:hover{
-        color: $orange;
-      }
-    }
-  }
-
-  nav .pseudo.button.burger:after{
-    content: "";
-    background: $gray-light;
-  }
-
-  nav .pseudo.button.burger:before{
-    @media (min-width: 768px){
-      content: "";
-      background: $gray-light;
-    }
-  }
-}
-
-.here{
-  @media (min-width: 700px){
-    color: $orange !important;
-    font-weight: bold !important;
   }
 }
