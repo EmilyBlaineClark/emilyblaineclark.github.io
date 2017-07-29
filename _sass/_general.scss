@@ -1,0 +1,44 @@
+.btn{
+  text-transform: uppercase;
+  color: $orange;
+  border: 1px solid $orange;
+  padding: 1em 1.4em;
+  margin: 0;
+  font-family: $opensans;
+  font-weight: bold;
+  font-size: 0.7em;
+  position: relative;
+  transition: 0.2s color;
+
+
+  &:before{
+    content: "";
+    height: 1px;
+    width: 0.8em;
+    background: $orange;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background: $orange;
+    z-index: -1;
+    transition: 0.5s right;
+  }
+
+  &:hover{
+    color: $white;
+    &:after{
+      right: 0%;
+    }
+  }
+}
