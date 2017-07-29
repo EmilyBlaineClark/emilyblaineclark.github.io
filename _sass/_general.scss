@@ -1,3 +1,13 @@
+.site__wrapper{
+  font-size: 0.8em;
+  @media($bp-tablet){
+    font-size: 0.9em;
+  }
+  @media($bp-desktop){
+    font-size: 1em;
+  }
+}
+
 .btn{
   text-transform: uppercase;
   color: $orange;
@@ -10,6 +20,7 @@
   position: relative;
   transition: 0.2s color;
   display: inline-block;
+  text-decoration: none;
 
 
   &:before{
@@ -82,4 +93,20 @@
   .btn{
     font-size: 1em;
   }
+}
+
+.flex{
+  position: relative;
+  z-index: 10;
+}
+
+hr{
+  outline: none;
+  border: none;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: white;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }

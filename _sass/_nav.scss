@@ -4,12 +4,23 @@
   fill: $white;
 }
 
+a{
+  text-decoration: underline;
+  color: $orange;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 // Nav Resets
 nav{
   background: none;
   position: absolute;
   top: 0;
   box-shadow: none;
+
+  @media($bp-desktop){
+    top: 1em;
+  }
 }
 
 nav .brand{
@@ -73,6 +84,7 @@ nav .burger ~ .menu a{
   color: $orange;
   margin-bottom: 1.3em;
   transition: 0.5s color;
+  text-decoration: none;
 
   @media( $bp-desktop ){
     color: $white;
