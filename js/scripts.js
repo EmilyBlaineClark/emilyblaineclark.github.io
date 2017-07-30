@@ -13,7 +13,63 @@ this;this._didScheduleScale=!0;requestAnimationFrame(function(){setTimeout(funct
 
 $(function() {
   $("img.scale").imageScale({
-  rescaleOnResize: true,
-  align: 'center'
+    rescaleOnResize: true,
+    align: 'center'
   });
 });
+
+(function($){
+  var cursorX;
+  var cursorY;
+  var maxHeight;
+  var maxWidth;
+  var min = 0;
+  var normalizedHeight;
+  var normalizedWidth;
+  var bgimage = jQuery(".homepage-bg-images .bg-image");
+  var fgimage = jQuery(".homepage-bg-images .fg-image");
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  function getMaxValues(){
+    maxHeight = window.innerHeight;
+    maxWidth = window.innerWidth;
+  }
+
+  function normalizeValues(cursorX, cursorY){
+    normalizedHeight = Math.round((cursorY - min) / (maxHeight - min) * 100)/100;
+    normalizedWidth = Math.round((cursorX - min) / (maxWidth - min)*100)/100;
+    // console.log("Height: " + normalizedHeight + " | Width: " + normalizedWidth);
+    bgimage.css({"transform":"translate(" + (normalizedWidth * 3) + "%, " + (normalizedHeight * 3) + "%) scale(1.1)"});
+    fgimage.css({"transform":"translate(" + (-normalizedWidth * 1) + "%, " + (-normalizedHeight * 1) + "%) scale(1.1)"});
+    return cursorX, cursorY;
+  }
+
+  getMaxValues();
+
+  document.onmousemove = debounce(function(e) {
+    cursorX = e.pageX;
+    cursorY = e.pageY;
+    normalizeValues(cursorX, cursorY);
+  }, 50);
+
+  window.onresize = function(){
+    var resizeInterval = setInterval(function(){
+      clearInterval(resizeInterval);
+      getMaxValues();
+    }, 500);
+  }
+})(jQuery);

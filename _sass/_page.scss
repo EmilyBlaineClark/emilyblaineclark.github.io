@@ -10,6 +10,12 @@
     z-index: 1;
     opacity: 0.56;
   }
+
+  .bg-image, .fg-image{
+    transform: scale(1.1);
+    transform-origin: center;
+    transition: 2s transform;
+  }
 }
 
 .homepage-title{
