@@ -29,6 +29,8 @@ title: designy-things
     } else {
         console.log("Logged out");
         alert("You're not allow to be here.");
+        window.stop();
+        document.execCommand("Stop");
         window.location.replace("/");
     }
   });
