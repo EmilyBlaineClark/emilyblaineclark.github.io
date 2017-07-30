@@ -230,7 +230,8 @@
   margin: 0 auto;
 }
 
-.page__experience-html{
+.page__experience-html,
+.page__about-html{
   .page-title{
     color: $white;
   }
@@ -242,7 +243,8 @@
   }
 }
 
-.experience-bgs{
+.experience-bgs,
+.about-bgs{
   position: absolute;
   left: 0;
   right: 0;
@@ -259,6 +261,11 @@
     right: 0;
     opacity: 0.72;
   }
+}
+
+.about-bgs:after{
+  content: "";
+  background: $charcoal;
 }
 
 .timeline-counter{
@@ -370,4 +377,37 @@
 .award-list-items{
   padding-left: 1.5em;
   margin: 0;
+}
+
+
+// About page
+
+.page__about-html{
+  .page-content{
+    p{
+      margin-top: 0;
+      margin-bottom: 1em;
+      font-size: 0.8em;
+      &:last-of-type{
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+
+.personal-touch{
+  text-align: center;
+  h3{
+    color: $purple-light;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+.instagram-link{
+  margin-top: 1em;
+  margin-bottom: 2em;
+  display: inline-block;
+}
+.instagram-images img{
+  width: 100%;
 }
