@@ -162,10 +162,25 @@
   }
 }
 
-.page__work-html .page-content{
-  max-width: 700px;
-  @media($bp-desktop){
-    left: 10%;
+.page__work-html {
+  .flex{
+    pointer-events: none;
+  }
+
+  .upper-half:after{
+    display: none;
+  }
+
+  .page-content{
+    max-width: 700px;
+
+    @media($bp-desktop){
+      left: 10%;
+    }
+
+    .btn{
+      pointer-events: auto;
+    }
   }
 }
 
