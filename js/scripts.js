@@ -72,4 +72,25 @@ $(function() {
       getMaxValues();
     }, 500);
   }
+
+  $('.iterate-up').each(function() {
+    var $this = $(this);
+    var countTo = $this.attr('data-count');
+    $this.html("0");
+
+    $({ countNum: $this.text()}).animate({
+      countNum: countTo
+    },{
+      duration: 800,
+      easing:'linear',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+      }
+
+    });
+  });
+
 })(jQuery);

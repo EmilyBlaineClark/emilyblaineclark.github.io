@@ -42,7 +42,7 @@ title: experience
       <div class="flex one-100 two-700 one-1000 timeline-counter">
         {% for time in site.data.timeline %}
         <div class="timeline-item">
-          <h3 class="timeline-time"><span class="iterate-up" data-amount="{{time.amount}}">{{time.amount}}</span><span class="unit">{{time.unit}}</span></h3>
+          <h3 class="timeline-time"><span class="iterate-up" data-count="{{time.amount}}">{{time.amount}}</span><span class="unit">{{time.unit}}</span></h3>
           <p>{{time.title}}</p>
         </div>
         {% endfor %}
