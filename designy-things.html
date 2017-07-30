@@ -1,0 +1,35 @@
+---
+layout: default
+title: designy-things
+---
+<div class="bg-images homepage-bg-images">
+  <img class="bg-image scale" src="/images/bg-images/home-768.jpg" srcset="/images/bg-images/home-768.jpg 700w, /images/bg-images/home-1024.jpg 900w, /images/bg-images/home-2000.jpg 1100w">
+</div>
+
+<div class="page-content">
+  <h1 class="ed-title">Designy Things</h1>
+  <p>Where all the work goes.</p>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAjHindbejwXOm4Ms0vAKTSdl_iXhXArFU",
+    authDomain: "emily-27539.firebaseapp.com",
+    databaseURL: "https://emily-27539.firebaseio.com",
+    projectId: "emily-27539",
+    storageBucket: "emily-27539.appspot.com",
+    messagingSenderId: "322180354964"
+  };
+  firebase.initializeApp(config);
+  firebase.auth().onAuthStateChanged(function(user) {
+    if(user){
+      console.log("Logged in");
+    } else {
+        console.log("Logged out");
+        alert("You're not allow to be here.");
+        window.location.replace("/");
+    }
+  });
+</script>

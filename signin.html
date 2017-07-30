@@ -1,0 +1,110 @@
+---
+layout: default
+title: signin
+---
+<div class="bg-images homepage-bg-images">
+  <img class="fg-image scale" src="/images/bg-images/large-e-768.png" srcset="/images/bg-images/large-e-768.png 700w, /images/bg-images/large-e-1024.png 900w, /images/bg-images/large-e-2000.png 1100w">
+  <img class="bg-image scale" src="/images/bg-images/home-768.jpg" srcset="/images/bg-images/home-768.jpg 700w, /images/bg-images/home-1024.jpg 900w, /images/bg-images/home-2000.jpg 1100w">
+</div>
+
+<div class="page-content signin-title">
+  <h1 class="ed-title">Sign in</h1>
+  <div class="sign-in-wrapper">
+    <input class="" type="text" id="email" name="email" placeholder="Email"/>
+    <input class="" type="password" id="password" name="password" placeholder="Password"/>
+    <a class="btn" href="#" id="sign-in">Sign In</a>
+  </div>
+</div>
+
+<div class="modal modal1">
+  <input id="modal_1" type="checkbox" />
+  <label for="modal_1" class="overlay"></label>
+  <article>
+    <header>
+      <h3>Loading Portfolio...</h3>
+      <label for="modal_1" class="close">&times;</label>
+    </header>
+    <section class="content">
+      You will be redirected to my portfolio momentarily.
+    </section>
+    <footer></footer>
+  </article>
+</div>
+
+<div class="modal modal2">
+  <input id="modal_2" type="checkbox" />
+  <label for="modal_2" class="overlay"></label>
+  <article>
+    <header>
+      <h3>Oops! Something happened!</h3>
+      <label for="modal_2" class="close">&times;</label>
+    </header>
+    <section class="content model2-content">
+      An error happened. Please try again.
+    </section>
+    <footer>
+      <label for="modal_2" class="button dangerous">Cancel</label>
+    </footer>
+  </article>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAjHindbejwXOm4Ms0vAKTSdl_iXhXArFU",
+    authDomain: "emily-27539.firebaseapp.com",
+    databaseURL: "https://emily-27539.firebaseio.com",
+    projectId: "emily-27539",
+    storageBucket: "emily-27539.appspot.com",
+    messagingSenderId: "322180354964"
+  };
+  firebase.initializeApp(config);
+  firebase.auth().signOut();
+
+  function toggleSignIn() {
+    console.log("Getting User");
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      toggleError(errorMessage);
+      console.log(error);
+      document.getElementById('sign-in').disabled = false;
+    });
+    document.getElementById('sign-in').disabled = true;
+  }
+  function toggleMessage(){
+    var mods = document.querySelectorAll('.modal1 > [type=checkbox]');
+    [].forEach.call(mods, function(mod){ mod.checked = true; });
+  }
+
+  function toggleError(message){
+    var mods = document.querySelectorAll('.modal2 > [type=checkbox]');
+    var modalContent = document.querySelectorAll('.modal2 .model2-content');
+    [].forEach.call(mods, function(mod){
+      mod.checked = true;
+      modalContent[0].innerHTML = message;
+    });
+  }
+  firebase.auth().onAuthStateChanged(function(user) {
+    console.log(firebase.auth().currentUser);
+    if(user !== null){
+      // Get a reference to the database service
+      var database = firebase.database();
+      var redirect = firebase.database().ref('redirect');
+      redirect.on('value', function(snapshot) {
+        console.log(snapshot.val());
+        toggleMessage();
+        setTimeout(function(){
+          window.location.replace(snapshot.val());
+        }, 2000);
+      });
+    }
+  });
+
+  document.getElementById('sign-in').addEventListener('click', toggleSignIn, false);
+
+</script>
