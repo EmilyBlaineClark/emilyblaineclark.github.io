@@ -8,7 +8,8 @@
   }
 }
 
-.btn{
+.btn, input[type="submit"].btn{
+  background: none;
   text-transform: uppercase;
   color: $orange;
   border: 2px solid $orange;
@@ -21,7 +22,6 @@
   transition: 0.2s color;
   display: inline-block;
   text-decoration: none;
-
 
   &:before{
     content: "";
@@ -49,6 +49,8 @@
 
   &:hover{
     color: $white;
+    background: none!important;
+
     &:after{
       right: 0%;
     }

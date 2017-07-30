@@ -4,22 +4,20 @@ title: contact
 ---
 
 <div class="upper-half">
-  <div class="contact-bgs">
-    <img class="contact-bg scale" data-scale="best-fill" data-align="center" src="/images/bg-images/home-768.jpg" srcset="/images/bg-images/home-768.jpg 700w, /images/bg-images/home-1024.jpg 1024w">
+  <div class="contact-bg-images contact-bgs">
+    <img class="bg-image scale" src="/images/bg-images/home-768.jpg" srcset="/images/bg-images/home-768.jpg 700w, /images/bg-images/home-1024.jpg 900w, /images/bg-images/home-2000.jpg 1100w">
   </div>
   <div class="flex one two-1000 contact-content">
-    <div class="">
-      <div class="page-title">
-        <h1 class="title">Contact</h1>
-      </div>
+    <div class="page-content">
+      <h1 class="page-title">Contact</h1>
       <p>Send a message to get in touch.</p>
       <div class="social-links">
-        <a href="#" class="linkedin">LinkedIn</a>
-        <a href="#" class="instagram">Instagram</a>
+        <a href="https://www.linkedin.com/in/emilyblaineclark/" target="_BLANK" class="linkedin" alt="Visit me on LinkedIn"><img src="/images/svgs/linkedin.svg" alt=""></a>
+        <a href="https://www.instagram.com/emilyblaineclark/" target="_BLANK" class="instagram" alt="Follow me on Instagram"><img src="/images/svgs/instagram.svg" alt=""></a>
       </div>
     </div>
-    <div class="">
-      <form class="contact-form" action="https://formspree.io/emilyblaineclark@gmail.com" method="POST">
+    <div class="page-content">
+      <form id="the-form" class="contact-form" action="https://formspree.io/emilyblaineclark@gmail.com" method="POST">
         <label for="name">Name*</label>
         <input id="name" name="name" type="text" required>
 
@@ -27,12 +25,20 @@ title: contact
         <input id="email" name="_replyto" type="email" required>
 
         <label for="message">Message (500 Char. or Less)*</label>
-        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+        <textarea name="message" id="message" cols="30" rows="5" required></textarea>
 
         <input type="hidden" name="_cc" value="m@codethebeard.com" />
         <input type="hidden" name="_subject" value="New Contact Form Submission - Emily Blaine Clark!" />
-        <input class="btn" type="submit" value="Send Message" placeholder="Send Message">
+
+        <input class="submit-btn-hide" type="submit" value="Send Message" placeholder="Send Message">
+        <a id="send-message" href="#" class="btn submit-btn" onclick="sendMessage(); return false;">Send Message</a>
       </form>
     </div>
   </div>
 </div>
+
+<script>
+function sendMessage(){
+  document.getElementById("the-form").submit();
+}
+</script>
