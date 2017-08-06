@@ -524,3 +524,108 @@
   }
 
 }
+
+[class*=page__designy],
+[class*=page__things]{
+  color: $black;
+
+  .page-title{
+    color: $black;
+
+    &:after{
+      background: $black;
+    }
+  }
+
+  .page-content{
+    color: $black;
+  }
+}
+
+
+.piece{
+  overflow: hidden;
+  padding: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  height: 300px;
+
+  &:after{
+    // Black Color Overlay
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($black, 0.56);
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  &--image{
+    @include aspect-ratio(16,9);
+    display: block;
+    z-index: 1;
+    transition: transform 2s;
+    transform: translate(0%, 0%) scale(1);
+  }
+
+  &--info-wrap{
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.5em;
+  }
+
+  &--page-title,
+  &--client,
+  &--anchor{
+    position: relative;
+    display: block;
+    z-index: 10;
+  }
+
+  &--page-title,
+  &--client{
+    color: $white;
+    text-transform: uppercase;
+    font-family: $opensans;
+    font-weight: bold;
+  }
+
+  &--page-title{
+    font-size: 2em;
+  }
+
+  &--client{
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
+
+  &--anchor.btn{
+    border-color: $white;
+    background-color: rgba($black, 0.6);
+    transition: background 1s;
+    color: $white;
+
+    &:before{
+      background: $white;
+    }
+
+    &:after{
+      background: $black;
+      display: none;
+    }
+
+    &:hover{
+      background-color: rgba($black, 0.8) !important;
+    }
+  }
+
+  &:hover{
+    .piece--image{
+      transform: translate(-1%, 1%) scale(1.1);
+    }
+  }
+}

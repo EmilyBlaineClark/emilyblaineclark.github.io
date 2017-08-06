@@ -2,34 +2,27 @@
 layout: default
 title: designy-things
 ---
-<div class="bg-images homepage-bg-images">
-  <img class="bg-image scale" src="/images/bg-images/home-768.jpg" srcset="/images/bg-images/home-768.jpg 700w, /images/bg-images/home-1024.jpg 900w, /images/bg-images/home-2000.jpg 1100w">
-</div>
 
 <div class="page-content">
-  <h1 class="ed-title">Designy Things</h1>
-  <p>Where all the work goes.</p>
+
+  <div class="flex">
+    <div class="one two-800">
+      <h1 class="page-title">Work</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+
+  {%for piece in site.things%}
+    <div class="piece">
+        <img class="piece--image scale" data-scale="best-fill" data-align="center" src="{{piece.thumbnail_url}}" alt="Bg Image">
+        <div class="piece--info-wrap">
+          <span class="piece--page-title">{{piece.page_title}}</span>
+          <span class="piece--client">{{piece.client}}</span>
+          <a class="btn piece--anchor" href="{{piece.url}}">View Project</a>
+        </div>
+    </div>
+  {%endfor%}
+
 </div>
 
-<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAjHindbejwXOm4Ms0vAKTSdl_iXhXArFU",
-    authDomain: "emily-27539.firebaseapp.com",
-    databaseURL: "https://emily-27539.firebaseio.com",
-    projectId: "emily-27539",
-    storageBucket: "emily-27539.appspot.com",
-    messagingSenderId: "322180354964"
-  };
-  firebase.initializeApp(config);
-  firebase.auth().onAuthStateChanged(function(user) {
-    if(user){
-      console.log("Logged in");
-    } else {
-        console.log("Logged out");
-        alert("You're not allow to be here.");
-        window.location.replace("/");
-    }
-  });
-</script>
+{% include check_auth.html %}

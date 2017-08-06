@@ -1,3 +1,7 @@
+body{
+  background: $gray-light;
+}
+
 .site__wrapper{
   font-size: 0.8em;
   @media($bp-tablet){
@@ -54,6 +58,20 @@
     &:after{
       right: 0%;
     }
+  }
+}
+
+.btn.next-project{
+  &:before{
+    content: "";
+    height: 2px;
+    width: 0.8em;
+    background: $orange;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 

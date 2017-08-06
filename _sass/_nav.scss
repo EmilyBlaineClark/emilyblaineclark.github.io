@@ -4,6 +4,11 @@
   fill: $white;
 }
 
+[class*=page__things] .brand svg,
+[class*=page__designy] .brand svg{
+  fill: $black;
+}
+
 a{
   text-decoration: underline;
   color: $orange;
@@ -85,12 +90,14 @@ nav .burger ~ .menu a{
   margin-bottom: 1.3em;
   transition: 0.5s color;
   text-decoration: none;
+  font-size: 1.6em;
 
   @media( $bp-desktop ){
     color: $white;
     padding-right: 1em;
     border-right: 1px solid $white;
     position: relative;
+    font-size: 1em;
 
     &:last-of-type{
       border: none;
@@ -116,5 +123,12 @@ nav .burger ~ .menu a{
         width: 80%;
       }
     }
+  }
+}
+
+[class*=page__things] nav .burger ~ .menu a,
+[class*=page__designy] nav .burger ~ .menu a{
+  @media( $bp-desktop ){
+    color: $black;
   }
 }

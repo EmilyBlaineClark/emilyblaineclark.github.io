@@ -7,3 +7,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 gems:
   - jekyll-feed
+
+collections:
+  things:
+    output: true
+    permalink: /:collection/:name
