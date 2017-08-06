@@ -543,11 +543,21 @@
 }
 
 
+.work-masonry{
+  width: 100%;
+}
+
+.grid-item,
+.grid-sizer{
+  width: 48%;
+  margin: 1%;
+}
+
 .piece{
   overflow: hidden;
+  display: block;
+  position: relative;
   padding: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
   height: 300px;
 
   &:after{
