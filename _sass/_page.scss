@@ -479,6 +479,7 @@
     &:focus{
       border-color: $orange;
     }
+
   }
   .submit-btn-hide{
     display: none;
@@ -518,6 +519,12 @@
     font-weight: 100;
     font-family: $montserrat;
     letter-spacing: 1px;
+    border-width: 2px;
+
+    &::placeholder{
+      color: rgba($white, 0.7);
+    }
+
     &:focus{
       border-color: $orange;
     }
@@ -644,4 +651,15 @@
       transform: translate(-1%, 1%) scale(1.1);
     }
   }
+}
+
+
+
+
+.page-content.signin-title{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 4em;
+  padding: 2em;
 }
