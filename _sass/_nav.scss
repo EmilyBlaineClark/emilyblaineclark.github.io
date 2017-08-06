@@ -132,3 +132,8 @@ nav .burger ~ .menu a{
     color: $black;
   }
 }
+
+.page-link.here{
+  color: $orange !important;
+  font-weight: bold;
+}
