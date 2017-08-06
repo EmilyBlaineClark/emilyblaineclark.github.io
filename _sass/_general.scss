@@ -62,17 +62,17 @@ body{
 }
 
 .btn.next-project{
-  &:before{
-    content: "";
-    height: 2px;
-    width: 0.8em;
-    background: $orange;
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  // &:before{
+  //   content: "";
+  //   height: 2px;
+  //   width: 0.8em;
+  //   background: $orange;
+  //   position: absolute;
+  //   right: 0;
+  //   left: auto;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
 }
 
 .page-title{

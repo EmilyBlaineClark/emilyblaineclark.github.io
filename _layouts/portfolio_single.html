@@ -3,7 +3,12 @@ layout: default
 ---
 <div class="page-content">
 
-  <div class="portfolio-single-wrapper">
+  <div class="hero-section">
+    <img src="{{page.hero_bg_url_mobile}}" alt="Hero Background" class="hero-bg scale" data-scale="best-fill" data-align="center" srcset="{{page.hero_bg_url_mobile}} 700w, {{page.hero_bg_url_tablet}} 900w, {{page.hero_bg_url_desktop}} 1100w">
+    <img src="{{page.hero_fg_url_mobile}}" alt="Hero Background" class="hero-fg" srcset="{{page.hero_fg_url_mobile}} 700w, {{page.hero_fg_url_tablet}} 900w, {{page.hero_fg_url_desktop}} 1100w">
+  </div>
+
+  <div class="portfolio-single-wrapper clearfix">
     <div class="portfolio-single-details">
       <strong>Client:</strong> {{ page.client }}<br>
       <strong>Responsibilities:</strong> {{ page.responsibilities }}<br>
@@ -16,9 +21,9 @@ layout: default
   <footer class="portfolio-single-footer">
     {% include portfolio_pagination.html %}
 
-    <a href="{{ '/contact' | prepend: site.baseurl }}" alt="go to contact page">Keep In Touch</a>
+    <a href="{{ '/contact' | prepend: site.baseurl }}" alt="go to contact page">Get In Touch</a>
   </footer>
-  
+
 </div>
 
 {% include check_auth.html %}
