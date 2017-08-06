@@ -549,8 +549,14 @@
 
 .grid-item,
 .grid-sizer{
-  width: 48%;
-  margin: 1%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  width: 100%;
+
+  @media($bp-tablet){
+    width: 48%;
+    margin: 1%;
+  }
 }
 
 .piece{

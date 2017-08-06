@@ -80,28 +80,30 @@
     });
   });
 
-  jQuery(".grid").masonry({
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    percentPosition: true,
-    horizontalOrder: true
-  });
+  var wWidth = jQuery(window).width();
+  if(wWidth >= 768){
+    jQuery(".grid").masonry({
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      horizontalOrder: true
+    });
 
-  var mItems = jQuery('.work-mansonry').children(".grid-item:odd");
-  var stStart = jQuery(document).scrollTop();
-  jQuery(document).on("scroll", function(event){
-    var nextSt = jQuery(document).scrollTop();
-    if(nextSt > stStart){
-      mItems.animate({
-        top: "-=1px"
-      }, 0)
-    } else {
-      mItems.animate({
-        top: "+=1px"
-      }, 0)
-    }
-    stStart = jQuery(document).scrollTop();
-  });
+    var mItems = jQuery('.work-mansonry').children(".grid-item:odd");
+    var stStart = jQuery(document).scrollTop();
+    jQuery(document).on("scroll", function(event){
+      var nextSt = jQuery(document).scrollTop();
+      if(nextSt > stStart){
+        mItems.animate({
+          top: "-=1px"
+        }, 0)
+      } else {
+        mItems.animate({
+          top: "+=1px"
+        }, 0)
+      }
+      stStart = jQuery(document).scrollTop();
+    });
+  }
 
-  console.log(mItems);
 })(jQuery);
