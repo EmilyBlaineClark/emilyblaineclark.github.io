@@ -219,7 +219,7 @@
   hr{
     background: $gray;
     opacity: 0.5;
-    height: 2px;
+    height: 1px;
     max-width: 850px;
     margin: 0 auto;
     display: block;
@@ -227,7 +227,7 @@
 }
 
 .full{
-  max-width: 1100px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -354,9 +354,9 @@
   margin: 0 auto;
 
   h2{
-    color: $purple-light;
+    color: $purple-bright;
     margin-bottom: 0.5em;
-    font-size: 2em
+    font-size: 1.8em
   }
 }
 
@@ -399,7 +399,7 @@
 .personal-touch{
   text-align: center;
   h3{
-    color: $purple-light;
+    color: $purple-bright;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
@@ -410,7 +410,7 @@
   display: inline-block;
 }
 .instagram-images img{
-  width: 100%;
+  width: 80%;
 }
 
 .page__contact-html{
