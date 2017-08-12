@@ -96,7 +96,6 @@ title: experience
         {% for award in site.data.awards %}
         <div class="award">
           <h3 class="award-title">{{award.title}}</h3>
-          <h3 class="award-subtitle">{{award.award}} | {{award.category}}</h3>
           <ul class="award-list-items">
             {% for list in award.list %}
             <li>{{ list.item }}</li>
