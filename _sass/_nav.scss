@@ -20,7 +20,7 @@ a{
 nav{
   background: none;
   position: absolute;
-  top: 0;
+  top: 1em;
   box-shadow: none;
 
   @media($bp-desktop){
@@ -51,7 +51,6 @@ nav .brand{
       transform: none;
       height: 1px;
       width: 80%;
-      top: 0;
       left: 8%;
     }
   }
