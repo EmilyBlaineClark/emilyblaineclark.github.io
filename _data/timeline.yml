@@ -1,15 +1,11 @@
-- amount: 12
+- amount: 10
   unit: "yrs"
-  title: "Print & Layout Design Experience"
+  title: "Professional Design Experience"
 
 - amount: 3
   unit: "yrs"
   title: "Digital & UI/UX Design Experience"
 
-- amount: 4
+- amount: 3
   unit: "yrs"
   title: "Agency Experience"
-
-- amount: 10
-  unit: "+"
-  title: "Awards & Honors"
