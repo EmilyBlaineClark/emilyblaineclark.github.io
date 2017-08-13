@@ -219,7 +219,7 @@
   hr{
     background: $gray;
     opacity: 0.5;
-    height: 1px;
+    height: 2px;
     max-width: 850px;
     margin: 0 auto;
     display: block;
@@ -227,7 +227,7 @@
 }
 
 .full{
-  max-width: 850px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -266,7 +266,7 @@
 
 .about-bgs:after{
   content: "";
-  background: $black;
+  background: $charcoal;
 }
 
 .timeline-counter{
@@ -344,7 +344,7 @@
 .tool-list,
 .skill-list{
   padding-left: 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .roles-and-responsibilities,
@@ -354,11 +354,9 @@
   margin: 0 auto;
 
   h2{
-    color: $purple-bright;
+    color: $purple-light;
     margin-bottom: 0.5em;
-    font-size: 1.4em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 2em
   }
 }
 
@@ -400,11 +398,10 @@
 
 .personal-touch{
   text-align: center;
-  h2{
-    color: $purple-bright;
+  h3{
+    color: $purple-light;
     text-transform: uppercase;
-    font-size: 1.4em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
 }
 .instagram-link{
@@ -413,7 +410,7 @@
   display: inline-block;
 }
 .instagram-images img{
-  width: 88%;
+  width: 100%;
 }
 
 .page__contact-html{
@@ -788,6 +785,52 @@
       width: 49%;
       &:last-of-type{
         margin-right: 0;
+      }
+    }
+  }
+}
+.tri-image{
+  @extend .clearfix;
+  text-align: center;
+  margin-bottom: 1em;
+
+  img{
+    display: inline-block;
+    width: 47.5%;
+    margin-right: 2%;
+
+    @media($bp-tablet){
+      margin-right: 1%;
+      width: 25%;
+    }
+
+    &:nth-of-type(2n){
+      margin-right: 0;
+    }
+
+    &:last-of-type{
+      display: none;
+      margin-right: 0;
+      @media($bp-tablet){
+        display: inline-block;
+      }
+    }
+  }
+}
+.dual-4-5-image{
+  @extend .dual-image;
+  vertical-align: bottom;
+
+  img{
+    float: none;
+    display: inline-block;
+
+    @media($bp-tablet){
+      &:nth-of-type(1n){
+        width: 78%;
+      }
+      &:nth-of-type(2n){
+        width: 19%;
       }
     }
   }
