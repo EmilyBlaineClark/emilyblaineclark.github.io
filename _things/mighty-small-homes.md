@@ -9,9 +9,9 @@ hero_fg_url_desktop: "/images/pieces/mighty-small-homes/mighty-2-header-image-20
 hero_fg_url_tablet: "/images/pieces/mighty-small-homes/mighty-2-header-image-1100.png"
 hero_fg_url_mobile: "/images/pieces/mighty-small-homes/mighty-2-header-image-768.png"
 client: "Mighty Small Homes"
-responsibilities: "Visual Branding, Art Direction, Wireframes, User Paths, Style Tiles, Mockups, Social Media Collateral"
+responsibilities: "Logo Design, Product Design, Visual Branding, Art Direction, Web Design, Wireframes, User Paths, Style Tiles, Mockups, Social Media, Marketing Collateral"
 employer: "DBS Interactive"
-awards: "Best In Category, Horizon Interactive Awards"
+awards: "Best In Category, Horizon Interactive Awards, 2016"
 ---
 
 # Mighty Small Homes is a local startup selling sustainable home kits direct to consumers.
@@ -29,8 +29,8 @@ The website’s design showcases the brand’s core messages: sustainability and
   <img src="/images/pieces/mighty-small-homes/mighty-5-laptop-768.png" srcset="/images/pieces/mighty-small-homes/mighty-5-laptop-768.png, /images/pieces/mighty-small-homes/mighty-5-laptop-1100.png 769w, /images/pieces/mighty-small-homes/mighty-5-laptop-2000.png 1101w" alt="">
 </div>
 <div class="dual-image">
-<img src="/images/pieces/mighty-small-homes/mighty-6-render-768.jpg" alt="">
-<img src="/images/pieces/mighty-small-homes/mighty-7-finished-render-768.jpg" alt="">
+  <img src="/images/pieces/mighty-small-homes/mighty-6-render-768.jpg" alt="">
+  <img src="/images/pieces/mighty-small-homes/mighty-7-finished-render-768.jpg" alt="">
 </div>
 <!-- <div class="dual-image">
   <img src="/images/portfolio-thumbs/mighty-768.jpg" alt="">
