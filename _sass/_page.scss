@@ -55,6 +55,7 @@
     right: 0;
     background: $black;
     opacity: 0.3;
+    pointer-events: none;
   }
 }
 
@@ -432,8 +433,20 @@
   margin-bottom: 2em;
   display: inline-block;
 }
+
+.instagram-images{
+  text-align: center;
+}
+
 .instagram-images img{
-  width: 100%;
+  width: 48%;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  display: inline-block;
+
+  @media($bp-tablet){
+    width: 22%;
+  }
 }
 
 .page__contact-html{
