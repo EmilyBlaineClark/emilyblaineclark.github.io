@@ -14,13 +14,14 @@ a{
   color: $orange;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 // Nav Resets
 nav{
   background: none;
   position: absolute;
-  top: .8em;
+  top: 0em;
   box-shadow: none;
 
   @media($bp-desktop){
@@ -52,6 +53,7 @@ nav .brand{
       height: 1px;
       width: 80%;
       left: 8%;
+      top: 0;
     }
   }
 
@@ -135,4 +137,21 @@ nav .burger ~ .menu a{
 .page-link.here{
   color: $orange !important;
   font-weight: bold;
+}
+
+.close{
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  color: $white;
+  display: none;
+  z-index: 100;
+  background: url('/images/svgs/close.svg') no-repeat;
+  background-size: cover;
+  width: 1.8em;
+  height: 1.8em;
+}
+
+nav .show:checked ~ .close{
+  display: block;
 }

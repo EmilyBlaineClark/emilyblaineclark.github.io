@@ -21,7 +21,7 @@ body{
   margin: 0;
   font-family: $opensans;
   font-weight: bold;
-  font-size: 0.7em;
+  font-size: 1em;
   position: relative;
   transition: 0.2s color;
   display: inline-block;
@@ -138,4 +138,8 @@ hr{
   background: white(0.5);
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.ed-title{
+  font-size: 2.5em;
 }

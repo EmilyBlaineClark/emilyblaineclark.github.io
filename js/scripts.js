@@ -99,4 +99,12 @@
     });
   }
 
+  setTimeout(function () {
+    jQuery(".away").removeClass("away");
+  }, 1000);
+
+  jQuery(".close").on('click', function(){
+    jQuery("#bmenub").click();
+  });
+
 })(jQuery);
