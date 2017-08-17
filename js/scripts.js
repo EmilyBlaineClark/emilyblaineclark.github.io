@@ -93,17 +93,18 @@
     var stStart = jQuery(document).scrollTop();
     jQuery(document).on("scroll", function(event){
       var nextSt = jQuery(document).scrollTop();
-      if(nextSt > stStart){
-        mItems.animate({
-          top: "-=1px"
-        }, 0)
-      } else {
-        mItems.animate({
-          top: "+=1px"
-        }, 0)
-      }
+      var moveInterval = nextSt / 5;
+      mItems.css('-webkit-transform','translate(0px,-' + moveInterval + 'px)');
       stStart = jQuery(document).scrollTop();
     });
   }
+
+  setTimeout(function () {
+    jQuery(".away").removeClass("away");
+  }, 1000);
+
+  jQuery(".close").on('click', function(){
+    jQuery("#bmenub").click();
+  });
 
 })(jQuery);

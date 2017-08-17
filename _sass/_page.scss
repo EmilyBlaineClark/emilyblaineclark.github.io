@@ -45,6 +45,17 @@
 
 .work-bg-images{
   background: $charcoal;
+
+  &:after{
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $black;
+    opacity: 0.3;
+  }
 }
 
 .work-devices{
@@ -52,10 +63,10 @@
   width: 100%;
   max-width: 400px;
   transition:
-    0.5s left,
-    0.5s right,
-    0.5s bottom,
-    0.5s top,
+    1.5s left,
+    1.5s right,
+    1.5s bottom,
+    1.5s top,
     1.5s transform;
 
   @media($bp-tablet){
@@ -64,6 +75,18 @@
 
   @media($bp-desktop){
     max-width: 700px;
+  }
+}
+
+.away{
+  .device-phone{
+    bottom: -100%;
+  }
+  .device-tablet{
+    right: 100%
+  }
+  .device-laptop{
+    right: -100%;
   }
 }
 
