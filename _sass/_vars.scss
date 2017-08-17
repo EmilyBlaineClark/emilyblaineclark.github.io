@@ -13,5 +13,6 @@ $orange: rgba(216, 129, 59, 1);
 $tablet: 700px;
 $desktop: 960px;
 
+$bp-mobile: "max-width: " $tablet;
 $bp-tablet: "min-width: " $tablet;
 $bp-desktop: "min-width: " $desktop;

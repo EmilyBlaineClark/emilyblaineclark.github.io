@@ -19,6 +19,20 @@
   }
 }
 
+.contact-bg-images{
+  &:after{
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $black;
+    opacity: 0.64;
+    pointer-events: none;
+  }
+}
+
 .homepage-title{
   z-index: 100;
   position: absolute;
@@ -504,6 +518,11 @@
   }
 }
 
+.contact-content{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .contact-form{
   text-align: center;
 
@@ -520,6 +539,7 @@
     margin-bottom: 1em;
     padding: 1.3em 1em;
     background: rgba($white, 0.18);
+    border-width: 2px;
     border-radius: 0;
     color: $white;
     font-weight: 100;
@@ -545,9 +565,23 @@
   }
 }
 
+.contact-form{
+  @media($bp-mobile){
+    input:focus,
+    textarea:focus{
+      background: $white;
+      color: $black;
+    }
+  }
+}
+
 .social-links a{
   margin-right: 1.5em;
   display: inline-block;
+
+  &:last-of-type{
+    margin-right: 0;
+  }
 }
 
 .page-content ~ .page-content{
@@ -893,5 +927,21 @@
   @media($bp-tablet){
     margin-top: 0;
     display: inline;
+  }
+}
+
+.page__signin-html{
+  .homepage-bg-images{
+    &:after{
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $black;
+      opacity: 0.64;
+      pointer-events: none;
+    }
   }
 }
