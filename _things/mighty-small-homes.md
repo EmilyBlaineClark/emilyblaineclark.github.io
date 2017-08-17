@@ -16,7 +16,7 @@ awards: "Best In Category, Horizon Interactive Awards, 2016"
 
 # Mighty Small Homes is a local startup selling sustainable home kits direct to consumers.
 
-I worked with a marketing team to build Mighty Small Homes’ brand from the ground up, including logo design, palette and type selections, and branding guidelines.
+I worked with a marketing team to build Mighty Small Homes’ brand from the ground up, including logo design, website design, marketing collateral, and branding guidelines. The biggest challenge being that when this project began, there were no actual small homes, just drafts of plans. So before any sort of branding could start, a 3D modeler and I worked together to design the look of the small home products.   
 
 <div class="dual-image">
   <img src="/images/pieces/mighty-small-homes/mighty-3-logo-768.jpg" alt="">
@@ -50,5 +50,5 @@ After launch, I’ve worked with the company owners and marketing team to design
 
 <div class="dual-image">
   <img src="/images/pieces/mighty-small-homes/mighty-8-mobile-768.jpg" alt="">
-  <img src="/images/pieces/mighty-small-homes/placeholder-9-768.jpg" alt="">
+  <img src="/images/pieces/mighty-small-homes/mighty-brochure-768.jpg" alt="">
 </div>
