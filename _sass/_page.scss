@@ -224,12 +224,16 @@
   &:after{
     content: "";
     background: url('/images/svgs/scroll-down-arrow.svg') no-repeat;
-    position: absolute;
+    position: fixed;
     bottom: 2em;
     left: 50%;
     transform: translateX(-50%);
     width: 25px;
     height: 25px;
+    display: none;
+    @media($bp-tablet){
+      display: block;
+    }
   }
 }
 
@@ -262,10 +266,17 @@
   }
   .page-content{
     max-width: 600px;
+    @media($bp-desktop){
+      left: 10%;
+    }
   }
   .btn{
     margin-right: 1em;
   }
+}
+
+.page__about-html .page-content{
+  max-width: 700px;
 }
 
 .experience-bgs,
@@ -296,10 +307,11 @@
 .timeline-counter{
   color: $white;
   padding: 1em;
-  font-size: 0.8em;
+  font-size: 1.1em;
 
   @media($bp-tablet){
     padding: 2em;
+    font-size: 0.8em;
   }
 
   @media($bp-desktop){
@@ -308,21 +320,18 @@
 }
 
 .timeline-item{
-  text-align: center;
+  text-align: left;
   padding: 1em;
   flex-grow: 1 !important;
   margin: 0 auto;
-  width: 100%;
 
   @media($bp-tablet){
     margin: 0;
-    width: 50%;
   }
 
   @media($bp-desktop){
     text-align: left;
     flex-grow: 0!important;
-    width: 100%;
   }
 }
 
@@ -353,16 +362,21 @@
 }
 
 .timeline-time ~ p{
-  padding-left: 0.5em;
   font-family: $opensans;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-left: 0;
+  @media($bp-tablet){
+    padding-left: 0.5em;
+    margin-left: inherit;
+  }
 }
 
 .keywords{
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 0.8em;
 }
 
 .tool-list,
@@ -373,7 +387,7 @@
 
 .roles-and-responsibilities,
 .awards{
-  font-size: 0.8em;
+  font-size: 1em;
   max-width: 850px;
   margin: 0 auto;
 
@@ -401,8 +415,8 @@
 .responsibilities-list,
 .award-list-items{
   padding-left: 1.5em;
-  margin: 0;
 }
+
 
 
 // About page
@@ -412,7 +426,7 @@
     p{
       margin-top: 0;
       margin-bottom: 1em;
-      font-size: 0.8em;
+      font-size: 1em;
       &:last-of-type{
         margin-bottom: 2em;
       }
@@ -869,5 +883,15 @@
         width: 19%;
       }
     }
+  }
+}
+
+.resume-download{
+  display: block;
+  margin-top: 2em;
+
+  @media($bp-tablet){
+    margin-top: 0;
+    display: inline;
   }
 }

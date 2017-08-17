@@ -12,11 +12,11 @@ title: experience
         <h1 class="page-title">Experience</h1>
         <p>My career as a designer has spanned more than a decade. I’ve worked on a variety of projects for a broad range of clients. Over that time, I’ve earned a reputation as a driven, forward-looking, and goal-oriented designer. That’s why at work I join my creative energy with effective collaboration, efficient processes, and clear communication.</p>
         <a href="{{ '/work' | prepend: site.baseurl }}" class="btn">View Work</a>
-        <a href="#">Download Resume</a>
+        <a href="{{ '/emily-clark-resume-web.pdf' | prepend: site.baseurl }}" class="resume-download">Download Resume</a>
 
         <hr>
 
-        <div class="flex two keywords">
+        <div class="flex one two-800 keywords">
           <div class="skills-list">
             <h3 class="skills-title">Skills</h3>
             <ul class="skill-list">
@@ -39,7 +39,7 @@ title: experience
     </div>
 
     <div class="two-fifth-1000">
-      <div class="flex one-100 two-700 one-1000 timeline-counter">
+      <div class="flex one-100 three-800 one-1000 timeline-counter">
         {% for time in site.data.timeline %}
         <div class="timeline-item">
           <h3 class="timeline-time"><span class="iterate-up" data-count="{{time.amount}}">{{time.amount}}</span><span class="unit">{{time.unit}}</span></h3>

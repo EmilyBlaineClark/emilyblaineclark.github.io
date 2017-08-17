@@ -68,7 +68,7 @@
     $({ countNum: $this.text()}).animate({
       countNum: countTo
     },{
-      duration: 800,
+      duration: 1800,
       easing:'linear',
       step: function() {
         $this.text(Math.floor(this.countNum));

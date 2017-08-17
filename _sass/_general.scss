@@ -3,7 +3,7 @@ body{
 }
 
 .site__wrapper{
-  font-size: 0.8em;
+  font-size: 1em;
   @media($bp-tablet){
     font-size: 0.9em;
   }
@@ -135,9 +135,9 @@ hr{
   display: block;
   height: 1px;
   width: 100%;
-  background: white(0.5);
   margin-top: 2em;
   margin-bottom: 2em;
+  background: rgba($white, 0.5);
 }
 
 .ed-title{
