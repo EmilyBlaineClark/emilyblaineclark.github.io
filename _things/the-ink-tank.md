@@ -5,6 +5,9 @@ thumbnail_url: "/images/portfolio-thumbs/inktank-768.jpg"
 hero_bg_url_desktop: "/images/pieces/inktank/inktank-header-2000.jpg"
 hero_bg_url_tablet: "/images/pieces/inktank/inktank-header-1100.jpg"
 hero_bg_url_mobile: "/images/pieces/inktank/inktank-header-768.jpg"
+hero_fg_url_desktop:
+hero_fg_url_tablet:
+hero_fg_url_mobile:
 client: "Kao Collins Inc."
 responsibilities: "Logo Design, Visual Branding, Art Direction, Web Design, Style Tiles, Wireframes, Mockups"
 employer: "DBS Interactive"
@@ -16,7 +19,7 @@ awards: "Bronze, Summit Creative Awards, 2016"
 This award-winning blog serves as the home for Kao Collins’ efforts to showcase innovation in their industry and build brand awareness.
 
 <div class="single-image">
-  <img src="/images/pieces/inktank/inktank-laptop-1100.png" srcset="/images/pieces/inktank/inktank-laptop-768.png, /images/pieces/inktank/inktank-laptop-1100.png 769w, /images/pieces/inktank/inktank-laptop-1100.png 1101w" alt="">
+  <img src="/images/pieces/inktank/inktank-laptop-768.png" srcset="/images/pieces/inktank/inktank-laptop-1100.png, /images/pieces/haiku/inktank-laptop-1100.png 769w, /images/pieces/inktank/inktank-laptop-768.png 1101w" alt="">
 </div>
 
 The Ink Tank features a hypnotic design that draws attention to ink inspiration, education and trends that show the depth and breadth Kao Collins. I designed The Ink Tank to have a bold, modern aesthetic. A minimalist home page draws attention to strong positioning copy and directs readers to popular content. A laser focus on typeface, header styles, and paragraph spacing put readability first.
