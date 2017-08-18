@@ -46,14 +46,16 @@
   function normalizeOrientationValues(alpha, beta, gamma){
     var normalizedWidth = 0;
     var normalizedHeight = 0;
-    normalizedWidth = Math.round((alpha) / (90) * 100)/100;
-    normalizedHeight = Math.round((beta) / (90) * 100)/100;
-    translateImages(normalizedWidth, normalizedHeight);
+    var gain = 75; // The lower the more intense
+    normalizedWidth = Math.round((beta) / (gain) * 100)/100;
+    normalizedHeight = Math.round((alpha) / (gain) * 100)/100;
+    translateImages(-normalizedHeight, -normalizedWidth);
+    // translateImages(normalizedWidth, normalizedHeight);
   }
 
   function translateImages(normalizedWidth, normalizedHeight){
     bgimage.css({"transform":"translate(" + (normalizedWidth * 3) + "%, " + (normalizedHeight * 3) + "%) scale(1.1)"});
-    fgimage.css({"transform":"translate(" + (-normalizedWidth * 1) + "%, " + (-normalizedHeight * 1) + "%) scale(1.1)"});
+    fgimage.css({"transform":"translate(" + (normalizedWidth * 1) + "%, " + (normalizedHeight * 1) + "%) scale(1.1)"});
   }
 
   getMaxValues();
