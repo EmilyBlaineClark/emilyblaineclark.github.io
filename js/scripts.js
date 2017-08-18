@@ -46,9 +46,9 @@
   function normalizeOrientationValues(alpha, beta, gamma){
     var normalizedWidth = 0;
     var normalizedHeight = 0;
-    var gain = 75; // The lower the more intense
+    var gain = 65; // The lower the more intense
     normalizedWidth = Math.round((beta) / (gain) * 100)/100;
-    normalizedHeight = Math.round((alpha) / (gain) * 100)/100;
+    normalizedHeight = Math.round((gamma) / (gain) * 100)/100;
     translateImages(-normalizedHeight, -normalizedWidth);
     // translateImages(normalizedWidth, normalizedHeight);
   }
