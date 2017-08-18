@@ -1,5 +1,8 @@
 body{
   background: $gray-light;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
 }
 
 .site__wrapper{
