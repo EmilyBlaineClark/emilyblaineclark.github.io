@@ -36,13 +36,24 @@
     maxWidth = window.innerWidth;
   }
 
-  function normalizeValues(cursorX, cursorY){
+  function normalizeCusorValues(cursorX, cursorY){
     normalizedHeight = Math.round((cursorY - min) / (maxHeight - min) * 100)/100;
     normalizedWidth = Math.round((cursorX - min) / (maxWidth - min)*100)/100;
     // console.log("Height: " + normalizedHeight + " | Width: " + normalizedWidth);
+    translateImages(normalizedWidth, normalizedHeight);
+  }
+
+  function normalizeOrientationValues(alpha, beta, gamma){
+    var normalizedWidth = 0;
+    var normalizedHeight = 0;
+    normalizedWidth = Math.round((alpha) / (90) * 100)/100;
+    normalizedHeight = Math.round((beta) / (90) * 100)/100;
+    translateImages(normalizedWidth, normalizedHeight);
+  }
+
+  function translateImages(normalizedWidth, normalizedHeight){
     bgimage.css({"transform":"translate(" + (normalizedWidth * 3) + "%, " + (normalizedHeight * 3) + "%) scale(1.1)"});
     fgimage.css({"transform":"translate(" + (-normalizedWidth * 1) + "%, " + (-normalizedHeight * 1) + "%) scale(1.1)"});
-    return cursorX, cursorY;
   }
 
   getMaxValues();
@@ -50,8 +61,13 @@
   document.onmousemove = debounce(function(e) {
     cursorX = e.pageX;
     cursorY = e.pageY;
-    normalizeValues(cursorX, cursorY);
+    normalizeCusorValues(cursorX, cursorY);
   }, 50);
+
+  // Fun device orientation stuff.
+  window.addEventListener('deviceorientation', function(e){
+    normalizeOrientationValues(e.alpha, e.beta, e.gamma);
+  });
 
   window.onresize = function(){
     var resizeInterval = setInterval(function(){
