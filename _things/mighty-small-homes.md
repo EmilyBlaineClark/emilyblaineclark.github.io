@@ -9,7 +9,7 @@ hero_fg_url_desktop: "/images/pieces/mighty-small-homes/mighty-2-header-image-11
 hero_fg_url_tablet: "/images/pieces/mighty-small-homes/mighty-2-header-image-1100.png"
 hero_fg_url_mobile: "/images/pieces/mighty-small-homes/mighty-2-header-image-768.png"
 client: "Mighty Small Homes"
-responsibilities: "Logo Design, Product Design, Visual Branding, Art Direction, Web Design, Wireframes, User Paths, Style Tiles, Mockups, Social Media, Marketing Collateral"
+responsibilities: "Logo Design, Product Design, Visual Branding, Art Direction, Web Design, Wireframes, User Paths, Style Tiles, Mockups, Social Media, Collateral"
 employer: "DBS Interactive"
 awards: "Best In Category, Horizon Interactive Awards, 2016"
 ---
