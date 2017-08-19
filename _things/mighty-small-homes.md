@@ -32,9 +32,6 @@ The website’s design showcases the brand’s core messages: sustainability and
   <img src="/images/pieces/mighty-small-homes/mighty-ipad-1100.png" alt="">
   <img src="/images/pieces/mighty-small-homes/mighty-mobile-768.png" alt="">
 </div>
-
-The website’s design showcases the brand’s core messages: sustainability and simple living. A custom mega-menu created an intuitive user path that should lead to more conversions. I led 3D modelers and front-end designers in creating assets that made the website the best in its niche market.
-
 <div class="dual-image">
   <img src="/images/pieces/mighty-small-homes/mighty-6-render-768.jpg" alt="">
   <img src="/images/pieces/mighty-small-homes/mighty-7-finished-render-768.jpg" alt="">
