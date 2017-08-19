@@ -19,7 +19,7 @@ awards: "Bronze, Summit Creative Awards, 2016"
 This award-winning blog serves as the home for Kao Collins’ efforts to showcase innovation in their industry and build brand awareness. The Ink Tank features a hypnotic design that draws attention to ink inspiration, education and trends that show the depth and breadth Kao Collins.
 
 <div class="single-image">
-  <img src="/images/pieces/inktank/inktank-laptop-768.png" srcset="/images/pieces/inktank/inktank-laptop-1100.png, /images/pieces/haiku/inktank-laptop-1100.png 769w, /images/pieces/inktank/inktank-laptop-768.png 1101w" alt="">
+  <img src="/images/pieces/inktank/inktank-header-2000.jpg alt="">
 </div>
 
 A minimalist home page draws attention to strong positioning copy and directs readers to popular content. A laser focus on typeface, header styles, and paragraph spacing put readability first.
