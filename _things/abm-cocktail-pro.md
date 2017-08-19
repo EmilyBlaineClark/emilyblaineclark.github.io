@@ -22,13 +22,16 @@ ABM Cocktail Pro was designed to give bartenders, restaurant owners and distribu
   <img src="/images/pieces/abm/abm-app-homescreen-768.jpg" alt="">
 </div>
 
-The simple interface features a bright palette that complements the colorful cocktail photography provided by the client. Although ABM had an existing brand and website, I created a new logo for the app and helped name it. Clear calls-to-action make the app easy to navigate but also encourage specific user actions.
+The simple interface features a bright palette that complements the colorful cocktail photography provided by the client. Although ABM had an existing brand and website, I created a new logo for the app and helped name it. 
 
 <div class="tri-image">
   <img src="/images/pieces/abm/abm-mid-mobile-1-768.png" alt="">
   <img src="/images/pieces/abm/abm-mid-mobile-2-768.png" alt="">
   <img src="/images/pieces/abm/abm-mid-mobile-3-768.png" alt="">
 </div>
+
+Clear calls-to-action make the app easy to navigate but also encourage specific user actions.
+
 <div class="dual-image">
 <img src="/images/pieces/abm/abm-wireframes-1-768.jpg" alt="">
 <img src="/images/pieces/abm/abm-wireframes-2-768.jpg" alt="">
