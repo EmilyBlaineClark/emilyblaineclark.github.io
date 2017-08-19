@@ -842,6 +842,10 @@
     padding-right: 2em;
     padding-left: 4em;
   }
+
+  @media($bp-desktop){
+    font-size: 1em;
+  }
 }
 
 .hero-background-wrap{
