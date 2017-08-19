@@ -27,8 +27,8 @@ I worked with a marketing team to build Mighty Small Homes’ brand from the gro
 </div>
 
 The website’s design showcases the brand’s core messages: sustainability and simple living. A custom mega-menu created an intuitive user path that should lead to more conversions. I led 3D modelers and front-end designers in creating assets that made the website the best in its niche market.
-<div class="dual-4-5-image">
 
+<div class="dual-4-5-image">
   <img src="/images/pieces/mighty-small-homes/mighty-ipad-1100.png" alt="">
   <img src="/images/pieces/mighty-small-homes/mighty-mobile-768.png" alt="">
 </div>
