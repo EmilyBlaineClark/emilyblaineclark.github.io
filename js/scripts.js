@@ -1,8 +1,15 @@
 (function($){
+  $('.contact-bg-images .bg-image').imageScale({
+    rescaleOnResize: true,
+    align: 'center',
+    parent: jQuery('.page__contact-html')
+  });
+
   $("img.scale").imageScale({
     rescaleOnResize: true,
     align: 'center'
   });
+
 })(jQuery);
 
 (function($){

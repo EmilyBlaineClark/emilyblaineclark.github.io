@@ -19,10 +19,10 @@
   }
 }
 
-.contact-bg-images{
+.page__contact-html{
   &:after{
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -238,7 +238,7 @@
   &:after{
     content: "";
     background: url('/images/svgs/scroll-down-arrow.svg') no-repeat;
-    position: fixed;
+    position: absolute;
     bottom: 2em;
     left: 50%;
     transform: translateX(-50%);
@@ -450,7 +450,9 @@
 
 .personal-touch{
   text-align: center;
-  h3{
+  padding: 0;
+
+  h2{
     color: $purple-light;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -467,7 +469,7 @@
 }
 
 .instagram-images img{
-  width: 48%;
+  width: 46%;
   margin-right: 4px;
   margin-bottom: 4px;
   display: inline-block;
@@ -504,7 +506,7 @@
   }
 
   .upper-half{
-    padding: 2em
+    padding: 1em
   }
 
   .bg-image{
@@ -514,12 +516,12 @@
     -ms-filter: blur(7px);
     -o-filter: blur(7px);
     transform: scale(1.1);
-
   }
 }
 
 .contact-content{
   max-width: 900px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -543,7 +545,7 @@
     border-radius: 0;
     color: $white;
     font-weight: 100;
-    font-family: $montserrat;
+    font-family: $opensans;
     letter-spacing: 1px;
 
     &:focus{
@@ -586,6 +588,8 @@
 
 .page-content ~ .page-content{
   margin-top: 0;
+  padding-top: 0;
+  padding: 0;
 
   @media($bp-desktop){
     margin-top: 4em;
