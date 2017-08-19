@@ -5,6 +5,8 @@
     parent: jQuery('.page__contact-html')
   });
 
+  $(window).trigger('resize');
+
   $("img.scale").imageScale({
     rescaleOnResize: true,
     align: 'center'

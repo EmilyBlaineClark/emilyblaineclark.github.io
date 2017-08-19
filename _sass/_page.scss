@@ -211,6 +211,10 @@
     pointer-events: none;
   }
 
+  .upper-half{
+    padding-bottom: 0;
+  }
+
   .upper-half:after{
     display: none;
   }
@@ -711,6 +715,8 @@
     text-transform: uppercase;
     font-family: $opensans;
     font-weight: bold;
+    line-height: 1;
+    margin-bottom: 0.4em;
   }
 
   &--page-title{
@@ -781,7 +787,7 @@
   .page-content{
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 4em;
+    padding-top: 4em;
   }
 }
 
