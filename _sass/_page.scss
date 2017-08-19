@@ -833,10 +833,7 @@
   color: $charcoal-light;
   font-family: $opensans;
   line-height: 1.8;
-
-  @media($bp-mobile){
-    font-size: 14px;
-  }
+  font-size: 14px;
 
   @media($bp-tablet){
     max-width: 33%;
@@ -860,9 +857,10 @@
 
 .hero-section{
   position: relative;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 
   @media($bp-tablet){
+    margin-bottom: 4em;
     height: 400px;
     margin-top: 6em;
     margin-bottom: 6em;
