@@ -2,12 +2,12 @@
 layout: "portfolio_single"
 page_title: "The Ink Tank"
 thumbnail_url: "/images/portfolio-thumbs/inktank-768.jpg"
-hero_bg_url_desktop: "/images/pieces/inktank/inktank-header-2000.jpg"
-hero_bg_url_tablet: "/images/pieces/inktank/inktank-header-1100.jpg"
-hero_bg_url_mobile: "/images/pieces/inktank/inktank-header-768.jpg"
-hero_fg_url_desktop:
-hero_fg_url_tablet:
-hero_fg_url_mobile:
+hero_bg_url_desktop: "/images/pieces/inktank/inktank-background-header-2000.jpg"
+hero_bg_url_tablet: "/images/pieces/inktank/inktank-background-header-1100.jpg"
+hero_bg_url_mobile: "/images/pieces/inktank/inktank-background-header-1100.jpg"
+hero_fg_url_desktop: "/images/pieces/inktank/inktank-laptop-1100.png"
+hero_fg_url_tablet: "/images/pieces/inktank/inktank-laptop-1100.png"
+hero_fg_url_mobile: "/images/pieces/inktank/inktank-laptop-768.png"
 client: "Kao Collins Inc."
 responsibilities: "Logo Design, Visual Branding, Art Direction, Web Design, Style Tiles, Wireframes, Mockups"
 employer: "DBS Interactive"
