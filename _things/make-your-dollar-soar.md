@@ -16,7 +16,7 @@ awards: "Gold, Horizon Interactive Awards, 2016; Silver, Summit Emerging Media A
 
 # The Make Your Dollar Soar infographic was the centerpiece of a regional fundraising push.
 
-Leadership Louisville needed a creative way to show the power of community investment while they raised money for the new Leadership Louisville Center building.
+Leadership Louisville needed a creative way to show the power of community investment while they raised money for the new Leadership Louisville Center building. DBS Interactive won a Gold Horizon Interactive Award for Make Your Dollar Soar – an animated, interactive infographic campaign.
 
 <div class="dual-image">
   <img src="/images/pieces/leadership-lou/lead-lou-plane-logo-768.jpg" alt="">
