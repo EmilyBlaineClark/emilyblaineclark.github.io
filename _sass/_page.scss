@@ -1,6 +1,6 @@
 .homepage-bg-images,
 .work-bg-images{
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -17,6 +17,8 @@
     transition: 2s transform;
   }
 }
+
+
 
 .page__contact-html{
   &:after{
@@ -207,12 +209,16 @@
 }
 
 .page__work-html {
+  min-height: 100vh;
+
   .flex{
     pointer-events: none;
   }
 
   .upper-half{
     padding-bottom: 0;
+    overflow: unset;
+    min-height: 100vh;
   }
 
   .upper-half:after{

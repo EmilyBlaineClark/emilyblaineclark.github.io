@@ -5,6 +5,12 @@
     parent: jQuery('.page__contact-html')
   });
 
+  $('.work-bg-images .work-bg').imageScale({
+    rescaleOnResize: true,
+    align: 'center',
+    parent: jQuery('.page__work-html')
+  });
+
   setTimeout(function(){
     $(window).trigger('resize');
   }, 500);
