@@ -50,8 +50,8 @@ body{
     left: 0;
     right: 100%;
     background: $orange;
-    z-index: -1;
     transition: 0.5s right;
+    z-index: -1;
   }
 
   &:hover{
@@ -61,6 +61,31 @@ body{
     &:after{
       right: 0%;
     }
+  }
+}
+
+.homepage-button{
+  &:after{
+    z-index: 1;
+  }
+
+  &:before{
+    z-index: 1;
+  }
+
+  .btn-fg{
+    position: relative;
+    z-index: 2;
+  }
+
+  .btn-bg{
+    background: rgba($black, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
   }
 }
 
@@ -150,4 +175,10 @@ hr{
   @media($bp-tablet){
     font-size: 2.5em;
   }
+}
+
+.signin-title{
+  color: $purple-light;
+  text-transform: uppercase;
+  text-align: center;
 }
