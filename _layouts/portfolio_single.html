@@ -12,10 +12,10 @@ layout: default
 
   <div class="portfolio-single-wrapper clearfix">
     <div class="portfolio-single-details">
-      <strong>Client:</strong> {{ page.client }}<br>
-      <strong>Responsibilities:</strong> {{ page.responsibilities }}<br>
-      <strong>Employer:</strong> {{ page.employer }}<br>
-      <strong>Awards:</strong> {{ page.awards }}
+      {% if page.client %}<strong>Client:</strong> {{ page.client }}<br>{% endif %}
+      {% if page.responsibilities %}<strong>Responsibilities:</strong> {{ page.responsibilities }}<br>{% endif %}
+      {% if page.employer %}<strong>Employer:</strong> {{ page.employer }}<br>{% endif %}
+      {% if page.awards %}<strong>Awards:</strong> {{ page.awards }}{% endif %}
     </div>
     {{ page.content }}
   </div>
