@@ -1,6 +1,5 @@
 .homepage-bg-images,
-.work-bg-images,
-.contact-bg-images{
+.work-bg-images{
   position: fixed;
   top: 0;
   left: 0;
@@ -481,6 +480,12 @@
 }
 
 .page__contact-html{
+  min-height: 100vh;
+
+  .upper-half{
+    overflow: unset;
+  }
+
   .upper-half:after{
     display: none;
   }
@@ -491,6 +496,7 @@
 
     @media($bp-desktop){
       text-align: left;
+      float: left;
     }
   }
 
@@ -594,6 +600,7 @@
 
   @media($bp-desktop){
     margin-top: 4em;
+    padding-left: 2em;
   }
 }
 
