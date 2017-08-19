@@ -22,13 +22,13 @@ I worked with a marketing team to build Mighty Small Homes’ brand from the gro
   <img src="/images/pieces/mighty-small-homes/mighty-3-logo-768.jpg" alt="">
   <img src="/images/pieces/mighty-small-homes/mighty-4-insta-768.jpg" alt="">
 </div>
+<div class="single-image">
+  <img src="/images/pieces/mighty-small-homes/mighty-laptop-768.png" srcset="/images/pieces/mighty-small-homes/mighty-laptop-1100.png, /images/pieces/mighty-small-homes/mighty-laptop-1100.png 769w, /images/pieces/mighty-small-homes/mighty-laptop-768.png 1101w" alt="">
+</div>
 
 The website’s design showcases the brand’s core messages: sustainability and simple living. A custom mega-menu created an intuitive user path that should lead to more conversions. I led 3D modelers and front-end designers in creating assets that made the website the best in its niche market.
-
-<div class="single-image">
-  <img src="/images/pieces/mighty-small-homes/mighty-5-laptop-768.png" srcset="/images/pieces/mighty-small-homes/mighty-5-laptop-1100.png, /images/pieces/mighty-small-homes/mighty-5-laptop-1100.png 769w, /images/pieces/mighty-small-homes/mighty-5-laptop-768.png 1101w" alt="">
-</div>
 <div class="dual-4-5-image">
+
   <img src="/images/pieces/mighty-small-homes/mighty-ipad-1100.png" alt="">
   <img src="/images/pieces/mighty-small-homes/mighty-mobile-768.png" alt="">
 </div>
