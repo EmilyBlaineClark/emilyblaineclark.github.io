@@ -28,6 +28,10 @@ The website’s design showcases the brand’s core messages: sustainability and
 <div class="single-image">
   <img src="/images/pieces/mighty-small-homes/mighty-5-laptop-768.png" srcset="/images/pieces/mighty-small-homes/mighty-5-laptop-768.png, /images/pieces/mighty-small-homes/mighty-5-laptop-1100.png 769w, /images/pieces/mighty-small-homes/mighty-5-laptop-2000.png 1101w" alt="">
 </div>
+<div class="dual-4-5-image">
+  <img src="/images/pieces/haiku/haiku-ipad-horizontal-1100.png" alt="">
+  <img src="/images/pieces/haiku/haiku-mobile-768.png" alt="">
+</div>
 <div class="dual-image">
   <img src="/images/pieces/mighty-small-homes/mighty-6-render-768.jpg" alt="">
   <img src="/images/pieces/mighty-small-homes/mighty-7-finished-render-768.jpg" alt="">
