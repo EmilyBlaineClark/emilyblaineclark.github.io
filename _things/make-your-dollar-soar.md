@@ -20,7 +20,7 @@ Leadership Louisville needed a creative way to show the power of community inves
 
 <div class="dual-image">
   <img src="/images/pieces/leadership-lou/lead-lou-plane-logo-768.jpg" alt="">
-  <img src="/images/pieces/leadership-lou/lead-lou-plane-logo-768.jpg" alt="">
+  <img src="/images/pieces/leadership-lou/lead-lou-yellow-768.jpg" alt="">
 </div>
 
 The idea for the basis of the infographic came from a friend of mine. When asked “What comes to mind when you think of a dollar bill and how that one dollar can multiply to make a difference?” Michael Polston responded “I think of folding that dollar into a little paper airplane, like you do when you’re a kid. And then I guess from there, it could fly and follow a path.” From that, the concept of the Leadership Louisville dollar airplane and flight plan came to be.
