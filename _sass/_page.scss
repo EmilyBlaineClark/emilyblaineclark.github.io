@@ -243,21 +243,6 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 4em;
-
-  &:after{
-    content: "";
-    background: url('/images/svgs/scroll-down-arrow.svg') no-repeat;
-    position: absolute;
-    bottom: 2em;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 25px;
-    height: 25px;
-    display: none;
-    @media($bp-tablet){
-      display: block;
-    }
-  }
 }
 
 .lower-half{
