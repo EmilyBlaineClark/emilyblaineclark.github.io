@@ -4,11 +4,6 @@
   fill: $white;
 }
 
-[class*=page__things] .brand svg,
-[class*=page__designy] .brand svg{
-  fill: $black;
-}
-
 a{
   text-decoration: underline;
   color: $white;
@@ -22,10 +17,6 @@ nav{
   position: absolute;
   top: 0em;
   box-shadow: none;
-
-  @media($bp-desktop){
-    top: 1em;
-  }
 }
 
 nav, nav label, nav a{
@@ -163,4 +154,20 @@ nav .burger ~ .menu a{
 
 nav .show:checked ~ .close{
   display: block;
+}
+
+.nav-wrap {
+  background: url('/images/bg-images/home-1024.jpg') no-repeat;
+  background-size: cover;
+  height: 69px;
+  
+  @media($bp-tablet){
+    height: 117px;
+    position: relative;
+  }
+}
+
+.page__homepage .nav-wrap,
+.page__contact-html .nav-wrap {
+  background: none;
 }

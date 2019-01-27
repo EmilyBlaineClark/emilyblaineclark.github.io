@@ -82,8 +82,6 @@
   }
 }
 
-.homepage-button{ }
-
 .work-bg-images{
   background: $charcoal;
 
@@ -336,6 +334,117 @@
 .about-bgs:after{
   content: "";
   background: $charcoal;
+}
+
+.about-text {
+  text-overflow: "-";
+
+  .page-content {
+    float: right;
+    left: 0;
+  }
+}
+
+figure {
+  color: #232323;
+  font-size: 16px;
+  
+  figcaption {
+    margin-top: 1em;
+  }
+
+  a {
+    color: #232323;
+    text-decoration: underline;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+}
+
+.external-link {
+  margin-right: 3px;
+  &:after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    top: 3px;
+    left: 4px;
+    background: url('/images/svgs/new_browser.svg') no-repeat;
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.about-image-top {
+  padding: 1em;
+  padding-top: 2em;
+  width: 100%;
+  margin: 0;
+
+  img {
+    width: 100%;
+  }
+
+  @media($bp-desktop){
+    display: none;
+  }
+}
+
+.about-image{
+  margin-top: 14em;
+  overflow: hidden;
+  display: none;
+
+  @media($bp-desktop){
+    display: block;
+    margin-top: 12em;
+    padding-right: 1em;
+  }
+
+  @media($bp-desktop-large) {
+    padding-right: 3em;
+    margin-top: 7em;
+  }
+
+  figure {
+    max-width: 580px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.link-group {
+  margin-top: 2em;
+
+  a {
+    color: $purple-light;
+    text-decoration: underline;
+    margin-bottom: 1em;
+    display: inline-block;
+
+    &:after {
+      background: url('/images/svgs/new_browser_purple.svg') no-repeat;
+      width: 1.2em;
+      height: 1.1em;
+    }
+  }
+
+  .pipe {
+    display: none;
+    background: $purple-light;
+    position: relative;
+    width: 2px;
+    height: 1.7em;
+    top: 0.3em;
+    margin-right: 0.75em;
+    margin-left: 0.75em;
+
+    @media($bp-desktop) {
+      display: inline-block;
+    }
+  }
 }
 
 .timeline-counter{
@@ -649,11 +758,12 @@
 }
 
 [class*=page__designy],
-[class*=page__things]{
+[class*=page__things],
+[class*=page__about]{
   color: $black;
 
   .page-title{
-    color: $black;
+    color: #232323;
 
     &:after{
       background: $black;
@@ -664,7 +774,6 @@
     color: $black;
   }
 }
-
 
 .work-masonry{
   width: 100%;
