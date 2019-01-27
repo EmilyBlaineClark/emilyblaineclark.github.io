@@ -11,8 +11,7 @@
 
 a{
   text-decoration: underline;
-  color: $orange;
-  text-transform: uppercase;
+  color: $white;
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -29,12 +28,22 @@ nav{
   }
 }
 
+nav, nav label, nav a{
+  font-family: $opensans;
+  text-transform: lowercase;
+  font-weight: 100;
+
+  @media($bp-desktop){
+    font-size: 0.9em;
+  }
+}
+
 nav .brand{
   max-width: 70%;
 }
 
 .burger.pseudo.button{
-  color: $orange;
+  color: $white;
   letter-spacing: 3px;
 
   &:before{
@@ -96,7 +105,6 @@ nav .burger ~ .menu a{
   @media( $bp-desktop ){
     color: $white;
     padding-right: 1em;
-    border-right: 1px solid $white;
     position: relative;
     font-size: 1em;
 
@@ -112,7 +120,7 @@ nav .burger ~ .menu a{
       left: 0;
       bottom: -5px;
       height: 1px;
-      background: $black;
+      background: $white;
       width: 0%;
       transition: 0.5s width;
     }
@@ -123,19 +131,20 @@ nav .burger ~ .menu a{
         background: $white;
       }
     }
-  }
-}
 
-[class*=page__things] nav .burger ~ .menu a,
-[class*=page__designy] nav .burger ~ .menu a{
-  @media( $bp-desktop ){
-    color: $black;
+    &.here:after {
+      width: 80%;
+    }
   }
 }
 
 .page-link.here{
   color: $white !important;
   font-weight: bold;
+  
+  @media (bp-desktop) {
+    text-decoration: underline !important;
+  }
 }
 
 .close{

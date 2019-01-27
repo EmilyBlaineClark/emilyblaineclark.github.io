@@ -5,16 +5,6 @@ body{
   font-family: $opensans;
 }
 
-nav, nav label, nav a{
-  font-family: $opensans;
-  text-transform: uppercase;
-  font-weight: 100;
-
-  @media($bp-desktop){
-    font-size: 0.9em;
-  }
-}
-
 .text-orange{
   color: $orange;
 }
