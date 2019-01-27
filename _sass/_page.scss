@@ -6,19 +6,26 @@
   right: 0;
   bottom: 0;
 
-  .fg-image {
-    z-index: 1;
-    opacity: 0.56;
-  }
-
-  .bg-image, .fg-image{
+  .bg-image {
     transform: scale(1.1);
     transform-origin: center;
     transition: 2s transform;
   }
 }
 
+.fg-image{
+  position: relative;
+  width: 108%;
+  left: -2em;
+  display: block;
+  max-height: 794px;
+  max-width: 950px;
 
+  @media($bp-desktop) {
+    width: 70%;
+    left: initial;
+  }
+}
 
 .page__contact-html{
   &:after{
@@ -38,25 +45,44 @@
   z-index: 100;
   position: absolute;
   color: $white;
-  bottom: 10%;
-  right: 10%;
   font-family: $opensans;
   font-weight: bold;
   letter-spacing: 2px;
+  left: 3%;
+  top: 10%;
+  right: 3%;
 
   @media($bp-tablet){
-    bottom: 35%;
   }
 
   @media($bp-desktop){
-    bottom: auto;
-    top: 40%;
   }
 }
 
-.homepage-button{
-  float: right;
+.homepage-text {
+  position: absolute;
+  letter-spacing: 1px;
+
+  @media($bp-desktop) {
+    top: 33%;
+    left: 49%;
+    font-size: 0.65em;
+  }
+
+  @media($bp-desktop-large) {
+    font-size: 0.75em;
+    top: 31%;
+    left: 51%;
+  }
+
+  @media($bp-desktop-larger) {
+    font-size: 1em;
+    left: 45%;
+    top: 28%;
+  }
 }
+
+.homepage-button{ }
 
 .work-bg-images{
   background: $charcoal;
@@ -359,9 +385,8 @@
 }
 
 .timeline-time{
-  font-family: $lato;
   font-size: 5em;
-  color: $orange;
+  color: $white;
   line-height: 1em;
   margin: 0;
   padding: 0;
@@ -609,7 +634,6 @@
     border-radius: 0;
     color: $white;
     font-weight: 100;
-    font-family: $montserrat;
     letter-spacing: 1px;
     border-width: 2px;
 

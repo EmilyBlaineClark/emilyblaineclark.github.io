@@ -87,7 +87,7 @@ nav .burger ~ .menu{
 
 nav .burger ~ .menu a{
   letter-spacing: 3px;
-  color: $orange;
+  color: $white;
   margin-bottom: 1.3em;
   transition: 0.5s color;
   text-decoration: none;
@@ -112,16 +112,15 @@ nav .burger ~ .menu a{
       left: 0;
       bottom: -5px;
       height: 1px;
-      background: $orange;
+      background: $black;
       width: 0%;
       transition: 0.5s width;
     }
 
     &:hover{
-      color: $orange;
-
       &:after{
         width: 80%;
+        background: $white;
       }
     }
   }
@@ -135,7 +134,7 @@ nav .burger ~ .menu a{
 }
 
 .page-link.here{
-  color: $orange !important;
+  color: $white !important;
   font-weight: bold;
 }
 
