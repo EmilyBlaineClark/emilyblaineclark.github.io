@@ -15,7 +15,7 @@ body{
   }
 }
 
-.btn, input[type="submit"].btn{
+.btn{
   background: none;
   text-transform: uppercase;
   color: $white;
@@ -118,6 +118,11 @@ body{
   letter-spacing: 1px;
   margin-top: 1em;
   margin-bottom: 0.5em;
+}
+
+.tertiary{
+  text-transform: none;
+  font-size: 1em;
 }
 
 .page-content{

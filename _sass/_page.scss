@@ -27,20 +27,6 @@
   }
 }
 
-.page__contact-html{
-  &:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: $black;
-    opacity: 0.64;
-    pointer-events: none;
-  }
-}
-
 .homepage-title{
   z-index: 100;
   position: absolute;
@@ -611,8 +597,20 @@ figure {
 .page__contact-html{
   min-height: 100vh;
 
+  &:after{
+    content: "";
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    pointer-events: none;
+  }
+
   .upper-half{
     overflow: unset;
+    padding: 0em 2em 2em 2em;
+    margin-top: 4em;
   }
 
   .upper-half:after{
@@ -620,29 +618,25 @@ figure {
   }
 
   .page-content{
-    text-align: center;
-    margin-top: 1em;
+    text-align: left;
+    color: $black;
+    padding: 0;
 
     @media($bp-desktop){
       text-align: left;
       float: left;
+      width: 50%;
     }
   }
 
   .page-title{
+    color: $black;
+    padding-top: 0;
+
     &:after{
-      left: 50%;
-      transform: translateX(-50%);
-
-      @media($bp-desktop){
-        left: 0;
-        transform: none;
-      }
+      left: 0.05em;
+      background: $black;
     }
-  }
-
-  .upper-half{
-    padding: 1em
   }
 
   .bg-image{
@@ -653,26 +647,37 @@ figure {
     -o-filter: blur(7px);
     transform: scale(1.1);
   }
+
+  .nav-wrap{
+    background: none;
+  }
 }
 
 .contact-content{
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  background: $gray-light;
+  padding: 1em;
+
+  @media($bp-desktop){
+    padding: 3em;
+  }
 }
 
 .contact-form{
-  text-align: center;
+  text-align: left;
 
   label{
-    color: $orange;
+    color: $black;
     text-transform: uppercase;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     display: block;
     text-align: left;
+    font-weight: bold;
   }
 
-  input,textarea{
+  input, textarea{
     display: inline-block;
     margin-bottom: 1em;
     padding: 1.3em 1em;
@@ -680,7 +685,7 @@ figure {
     border-width: 2px;
     border-radius: 0;
     color: $white;
-    font-weight: 100;
+    font-weight: bold;
     font-family: $opensans;
     letter-spacing: 1px;
 
@@ -698,7 +703,7 @@ figure {
     display: inline-block;
 
     @media($bp-desktop){
-      font-size: 0.8em !important;
+      font-size: 1em !important;
     }
   }
 }
@@ -728,7 +733,7 @@ figure {
   padding: 0;
 
   @media($bp-desktop){
-    margin-top: 8em;
+    // margin-top: 8em;
     padding-left: 2em;
     margin-bottom: 3em;
   }
