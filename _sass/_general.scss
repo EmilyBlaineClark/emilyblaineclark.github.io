@@ -145,6 +145,15 @@ body{
   }
 }
 
+.get-in-touch{
+  &:after {
+    content: "";
+    background: url('/images/svgs/new_browser_purple.svg') no-repeat;
+    width: 1.2em;
+    height: 1.1em;
+  }
+}
+
 .flex{
   position: relative;
   z-index: 10;

@@ -361,6 +361,13 @@ figure {
   }
 }
 
+.internal-link {
+  color: $purple-light;
+  text-decoration: underline;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
 .about-image-top {
   padding: 1em;
   padding-top: 2em;
@@ -401,6 +408,8 @@ figure {
   }
 }
 
+
+
 .link-group {
   margin-top: 2em;
 
@@ -411,6 +420,7 @@ figure {
     display: inline-block;
 
     &:after {
+      content: "";
       background: url('/images/svgs/new_browser_purple.svg') no-repeat;
       width: 1.2em;
       height: 1.1em;
