@@ -791,8 +791,8 @@ figure {
   width: 100%;
 
   @media(min-width: 768px){
-    width: 48%;
-    margin: 1%;
+    width: 49%;
+    margin: 0.5%;
   }
 }
 
@@ -800,8 +800,8 @@ figure {
   overflow: hidden;
   display: block;
   position: relative;
-  padding: 1.5em;
-  height: 300px;
+  padding: 1em;
+  height: 456px;
 
   &:after{
     // Black Color Overlay
@@ -827,8 +827,8 @@ figure {
 
   &--info-wrap{
     position: absolute;
-    bottom: 1.5em;
-    left: 1.5em;
+    bottom: 2.5em;
+    left: 2.5em;
   }
 
   &--page-title,
@@ -851,6 +851,7 @@ figure {
 
   &--page-title{
     font-size: 2em;
+    text-transform: lowercase;
   }
 
   &--client{
@@ -861,7 +862,7 @@ figure {
   &--anchor.btn{
     border-color: $white;
     background-color: rgba($black, 0.6);
-    transition: background 1s;
+    transition: background 1s, color 1s;
     color: $white;
 
     &:before{
@@ -875,6 +876,7 @@ figure {
 
     &:hover{
       background-color: rgba($black, 0.8) !important;
+      color: rgba($white, 0.8);
     }
   }
 
