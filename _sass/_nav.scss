@@ -4,15 +4,9 @@
   fill: $white;
 }
 
-[class*=page__things] .brand svg,
-[class*=page__designy] .brand svg{
-  fill: $black;
-}
-
 a{
   text-decoration: underline;
-  color: $orange;
-  text-transform: uppercase;
+  color: $white;
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -23,9 +17,15 @@ nav{
   position: absolute;
   top: 0em;
   box-shadow: none;
+}
+
+nav, nav label, nav a{
+  font-family: $opensans;
+  text-transform: lowercase;
+  font-weight: 100;
 
   @media($bp-desktop){
-    top: 1em;
+    font-size: 0.9em;
   }
 }
 
@@ -34,7 +34,7 @@ nav .brand{
 }
 
 .burger.pseudo.button{
-  color: $orange;
+  color: $white;
   letter-spacing: 3px;
 
   &:before{
@@ -87,7 +87,7 @@ nav .burger ~ .menu{
 
 nav .burger ~ .menu a{
   letter-spacing: 3px;
-  color: $orange;
+  color: $white;
   margin-bottom: 1.3em;
   transition: 0.5s color;
   text-decoration: none;
@@ -96,7 +96,6 @@ nav .burger ~ .menu a{
   @media( $bp-desktop ){
     color: $white;
     padding-right: 1em;
-    border-right: 1px solid $white;
     position: relative;
     font-size: 1em;
 
@@ -112,31 +111,31 @@ nav .burger ~ .menu a{
       left: 0;
       bottom: -5px;
       height: 1px;
-      background: $orange;
+      background: $white;
       width: 0%;
       transition: 0.5s width;
     }
 
     &:hover{
-      color: $orange;
-
       &:after{
         width: 80%;
+        background: $white;
       }
+    }
+
+    &.here:after {
+      width: 80%;
     }
   }
 }
 
-[class*=page__things] nav .burger ~ .menu a,
-[class*=page__designy] nav .burger ~ .menu a{
-  @media( $bp-desktop ){
-    color: $black;
-  }
-}
-
 .page-link.here{
-  color: $orange !important;
+  color: $white !important;
   font-weight: bold;
+  
+  @media (bp-desktop) {
+    text-decoration: underline !important;
+  }
 }
 
 .close{
@@ -155,4 +154,27 @@ nav .burger ~ .menu a{
 
 nav .show:checked ~ .close{
   display: block;
+}
+
+.nav-wrap {
+  background: url('/images/bg-images/home-1024.jpg') no-repeat;
+  background-size: cover;
+  height: 69px;
+  
+  @media($bp-tablet){
+    height: 117px;
+    position: relative;
+  }
+}
+
+.page__homepage .nav-wrap {
+  background: none;
+}
+
+.pagination .btn{
+  font-weight: 400;
+
+  & ~ .btn{
+    margin-left: 0.5em;
+  }
 }

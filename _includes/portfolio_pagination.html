@@ -47,10 +47,15 @@
 {% endif %}
 <div class="pagination">
   {% if prevPost.url %}
-  <a href="{{prevPost.url}}" class="btn previous-project pagination" alt="go to previous project">Previous</a>
+  <a href="{{prevPost.url}}" class="btn previous-project pagination" alt="go to previous project">
+    <span class="btn-fg">Previous</span>
+    <span class="btn-bg"></span>
+  </a>
   {% endif %}
 
   {% if nextPost.url %}
-  <a href="{{nextPost.url}}" class="btn next-project pagination" alt="go to next project">Next</a>
+  <a href="{{nextPost.url}}" class="btn next-project pagination" alt="go to next project">
+    <span class="btn-fg">Next</span>
+    <span class="btn-bg"></span></a>
   {% endif %}
 </div>

@@ -31,7 +31,6 @@
   var normalizedHeight;
   var normalizedWidth;
   var bgimage = jQuery(".homepage-bg-images .bg-image");
-  var fgimage = jQuery(".homepage-bg-images .fg-image");
 
   function debounce(func, wait, immediate) {
     var timeout;
@@ -72,7 +71,6 @@
 
   function translateImages(normalizedWidth, normalizedHeight){
     bgimage.css({"transform":"translate(" + (normalizedWidth * 3) + "%, " + (normalizedHeight * 3) + "%) scale(1.1)"});
-    fgimage.css({"transform":"translate(" + (normalizedWidth * 1) + "%, " + (normalizedHeight * 1) + "%) scale(1.1)"});
   }
 
   getMaxValues();
@@ -120,6 +118,7 @@
     jQuery(".grid").masonry({
       itemSelector: '.grid-item',
       columnWidth: '.grid-sizer',
+      // gutter: '.gutter-sizer',
       percentPosition: true,
       horizontalOrder: true
     });
